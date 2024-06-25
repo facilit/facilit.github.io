@@ -7,9 +7,6 @@ theme:
   language: pt-BR
 extra_css:
   - stylesheets/extra.css
-plugins:
-  - offline
-  - search
 markdown_extensions:
   - admonition
   - pymdownx.details
