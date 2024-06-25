@@ -5,6 +5,8 @@ theme:
   palette:
     primary: custom
   language: pt-BR
+  logo:
+    assets/logo_branca.png
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
