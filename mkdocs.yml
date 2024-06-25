@@ -1,0 +1,93 @@
+site_name: Base de Conhecimentos do Target
+site_url: https://172.19.4.153:8000
+theme:
+  name: material
+  palette:
+    primary: custom
+  language: pt-BR
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - offline
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+nav:
+  - Início: index.md
+  - Visão Geral:
+    - Visão Geral: 1.1_Um_pouco_de_história.md
+    - Um pouco de história: 1.2_A_Plataforma_Target.md
+    - A Plataforma Target: 1.3_Estrutura_da_Plataforma.md
+    - Estrutura da Plataforma: 1.4_Reuniões_de_Monitoramento.md
+    - Reuniões de Monitoramento: 1.5_Estrutura_de_atualização_e_inclusão_das_informações.md
+    - Estrutura de atualização e inclusão das informações: 1.6_Glossário.md
+    - Glossário: 1.Visão_Geral.md
+  - Níveis de Informação:
+    - Níveis de Informação: 10.1._Cadastros_Auxiliares.md
+    - Criação dos Níveis (N1, N2, N3, N4, N5 e N6): 10.11_Idioma.md
+    - Como Editar e Remover Entidades: 10.12_Tema.md
+  - Gestão de Projetos:
+    - Gestão de Projetos: 10.14_Modelos_de_Notificações.md
+    - Página da Entidade:
+      - Página da Entidade: 10.15_Migração_de_Ano.md
+      - Mover, Copiar Entidades: 10.3._Gestão_de_Usuários.md
+      - Observações, Notas Técnicas: 10._Administração_da_Plataforma.md
+      - Entidades Vinculadas: 13.10_5_WHY'S.md
+      - Galeria de Imagens: 13.11_Mapa_Mental.md
+    - Menu de Ações: 13.12_Kanban.md
+    - Envolvidos nos Projetos:
+      - Envolvidos nos Projetos: 13.1_Projetos.md
+      - Repositório de Documentos: 13.2_Mapa_Estratégico.md
+      - Riscos: 13.3_BSC_-_Balanced_Score_Card.md
+      - Criar entidade baseada em template: 13.4_Gestão_a_Vista.md
+    - Modelos de Entidades: 13.5_KPI_-_Key_Performance_Indicator.md
+    - Configurações de Datas: 13.6_OKR_-_Objectives_and_Key_Results.md
+    - Checklist: 13.7_Canvas.md
+    - Planilhas: 13.8_Scrum.md
+    - Canvas: 13.9_5W2H.md
+  - Gestão de Indicadores:
+    - Gestão de Indicadores: 2.1._Criação_dos_Níveis_(N1,_N2,_N3,_N4,_N5_e_N6).md
+  - Gestão Estratégica:
+    - Gestão Estratégica: 2.2._Como_Editar_e_Remover_Entidades.md
+    - Gerenciador de Indicadores: 2._Níveis_de_Informação.md
+    - Matriz de Indicadores: 3.1._Página_da_Entidade.md
+    - Indicadores Compostos: 3.2.1._Mover,_Copiar_Entidades.md
+    - Análise de Desempenho do Indicador: 3.2.2._Observações,_Notas_Técnicas.md
+    - Método de cálculo e polaridade: 3.2.3_Entidades_Vinculadas.md
+  - Reuniões, Apresentações e Encaminhamentos:
+      - Reuniões, Apresentações e Encaminhamentos: 3.2.4_Galeria_de_Imagens.md
+      - Confirmação de participação na reunião com Justificativa: 3.2._Menu_de_Ações.md
+  - Gestão da Comunicação:
+    - Gestão da Comunicação: 3.21_Canvas.md
+  - Geolocalização:
+    - Geolocalização: 3.3_Envolvidos_nos_Projetos.md
+  - Administração da Plataforma:
+    - Administração da Plataforma: 3.4.5_Repositório_de_Documentos.md
+    - Cadastros Auxiliares: 3.4.7_Riscos.md
+    - Gestão de Usuários: 3.5.1._Criar_entidade_baseada_em_template.md
+    - Idioma: 3.5._Modelos_de_Entidades.md
+    - Tema: 3.6._Configurações_de_Datas.md
+    - Modelos de Notificações: 3.7_Checklist.md
+    - Migração de Ano: 3.9_Planilhas.md
+    - Projetos: 3._Gestão_de_Projetos.md
+    - Mapa Estratégico: 4._Gestão_Estratégica.md
+    - BSC- Balanced Score Card: 5.1._Gerenciador_de_Indicadores.md
+    - Gestão a Vista: 5.2._Matriz_de_Indicadores.md
+    - KPI- Key Performance Indicator: 5.4._Indicadores_Compostos.md
+    - OKR- Objectives and Key Results: 5.5._Análise_de_Desempenho_do_Indicador.md
+    - Canvas: 5.7_Método_de_cálculo_e_polaridade.md
+    - Scrum: 5._Gestão_de_Indicadores.md
+    - 5W2H: 6.2.2._Confirmação_de_participação_na_reunião_com_Justificativa.md
+    - 5 WHY'S: 6._Reuniões,_Apresentações_e_Encaminhamentos.md
+    - Mapa Mental: 8._Gestão_da_Comunicação.md
+    - Kanban: 9._Geolocalização.md
+  - Configuração da Propagação de Datas:
+    - Configuração da Propagação de Datas: Configuração_da_Propagação_de_Datas.md
+  - Criando entidades:
+    - Criando entidades: Criando_entidades.md
+  - Criação de Páginas:
+    - Criação de Páginas: Criação_de_Páginas.md
+  - Metodologias de Gestão:
+    - Metodologias de Gestão: Metodologias_de_Gestão.md
