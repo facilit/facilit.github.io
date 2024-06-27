@@ -1,0 +1,2341 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://172.19.4.153:8000/10.3_Gest%C3%A3o_de_Usu%C3%A1rios/">
+      
+      
+        <link rel="prev" href="../10.1_Cadastros_Auxiliares/">
+      
+      
+        <link rel="next" href="../10.11_Idioma/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Gestão de Usuários - Base de Conhecimentos do Target</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#103-gestao-de-usuarios" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Base de Conhecimentos do Target" class="md-header__button md-logo" aria-label="Base de Conhecimentos do Target" data-md-component="logo">
+      
+  <img src="../assets/logo_branca.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Base de Conhecimentos do Target
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gestão de Usuários
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Base de Conhecimentos do Target" class="md-nav__button md-logo" aria-label="Base de Conhecimentos do Target" data-md-component="logo">
+      
+  <img src="../assets/logo_branca.png" alt="logo">
+
+    </a>
+    Base de Conhecimentos do Target
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Geral
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.Vis%C3%A3o_Geral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.1_Um_pouco_de_hist%C3%B3ria/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Um pouco de história
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2_A_Plataforma_Target/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A Plataforma Target
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.3_Estrutura_da_Plataforma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estrutura da Plataforma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.4_Reuni%C3%B5es_de_Monitoramento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reuniões de Monitoramento
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.5_Estrutura_de_atualiza%C3%A7%C3%A3o_e_inclus%C3%A3o_das_informa%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estrutura de atualização e inclusão das informações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.6_Gloss%C3%A1rio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Níveis de Informação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Níveis de Informação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_N%C3%ADveis_de_Informa%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Níveis de Informação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.1_Cria%C3%A7%C3%A3o_dos_N%C3%ADveis_%28N1%2C_N2%2C_N3%2C_N4%2C_N5_e_N6%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Criação dos Níveis (N1, N2, N3, N4, N5 e N6)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.2_Como_Editar_e_Remover_Entidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Como Editar e Remover Entidades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gestão de Projetos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Gestão de Projetos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_Gest%C3%A3o_de_Projetos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestão de Projetos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1_P%C3%A1gina_da_Entidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Página da Entidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Menu de Ações
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Menu de Ações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2_Menu_de_A%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Menu de Ações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.1_Mover%2C_Copiar_Entidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mover, Copiar Entidades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.2_Observa%C3%A7%C3%B5es%2C_Notas_T%C3%A9cnicas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Observações, Notas Técnicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.3_Entidades_Vinculadas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entidades Vinculadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.4_Galeria_de_Imagens/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galeria de Imagens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Envolvidos nos Projetos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Envolvidos nos Projetos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.3_Envolvidos_nos_Projetos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Envolvidos nos Projetos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.5_Reposit%C3%B3rio_de_Documentos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repositório de Documentos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.7_Riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modelos de Entidades
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Modelos de Entidades
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.5_Modelos_de_Entidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos de Entidades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.5.1_Criar_entidade_baseada_em_template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Criar entidade baseada em template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.6_Configura%C3%A7%C3%B5es_de_Datas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configurações de Datas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.7_Checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.9_Planilhas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planilhas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.21_Canvas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canvas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_Gest%C3%A3o_Estrat%C3%A9gica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestão Estratégica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gestão de Indicadores
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Gestão de Indicadores
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_Gest%C3%A3o_de_Indicadores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestão de Indicadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.1_Gerenciador_de_Indicadores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gerenciador de Indicadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.2_Matriz_de_Indicadores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matriz de Indicadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.4_Indicadores_Compostos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indicadores Compostos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.5_An%C3%A1lise_de_Desempenho_do_Indicador/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de Desempenho do Indicador
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.7_M%C3%A9todo_de_c%C3%A1lculo_e_polaridade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Método de cálculo e polaridade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reuniões, Apresentações e Encaminhamentos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Reuniões, Apresentações e Encaminhamentos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_Reuni%C3%B5es%2C_Apresenta%C3%A7%C3%B5es_e_Encaminhamentos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reuniões, Apresentações e Encaminhamentos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2.2_Confirma%C3%A7%C3%A3o_de_participa%C3%A7%C3%A3o_na_reuni%C3%A3o_com_Justificativa/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Confirmação de participação na reunião com Justificativa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8_Gest%C3%A3o_da_Comunica%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestão da Comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9_Geolocaliza%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geolocalização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Administração da Plataforma
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Administração da Plataforma
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Administra%C3%A7%C3%A3o_da_Plataforma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Administração da Plataforma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.1_Cadastros_Auxiliares/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadastros Auxiliares
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Gestão de Usuários
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.11_Idioma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Idioma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.12_Tema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.14_Modelos_de_Notifica%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modelos de Notificações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.15_Migra%C3%A7%C3%A3o_de_Ano/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migração de Ano
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.1_Projetos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projetos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.2_Mapa_Estrat%C3%A9gico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapa Estratégico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.3_BSC_-_Balanced_Score_Card/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BSC- Balanced Score Card
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.4_Gest%C3%A3o_a_Vista/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestão a Vista
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.5_KPI_-_Key_Performance_Indicator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KPI- Key Performance Indicator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.6_OKR_-_Objectives_and_Key_Results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OKR- Objectives and Key Results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.7_Canvas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canvas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.8_Scrum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scrum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.9_5W2H/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5W2H
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.10_5_WHY%27S/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 WHY'S
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.11_Mapa_Mental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mapa Mental
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.12_Kanban/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kanban
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configura%C3%A7%C3%A3o_da_Propaga%C3%A7%C3%A3o_de_Datas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuração da Propagação de Datas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Criando_entidades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Criando entidades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Criação_de_Páginas.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Criação de Páginas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Metodologias_de_Gest%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologias de Gestão
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="103-gestao-de-usuarios">10.3. Gestão de Usuários</h1>
+<p>As pessoas cadastradas como usuários no Target terão acesso à plataforma e poderão utilizá-la — segundo as permissões que lhes foram concedidas — para realizar as mais variadas tarefas: desde configurações no sistema até a gestão de entidades, indicadores, instituições e etc.</p>
+<p>Desse modo, seu ambiente fica mais seguro, você pode monitorar o uso do sistema, além de identificar e corrigir possíveis problemas com mais facilidade.</p>
+<p>Neste vídeo nós vamos mostrar como você pode adicionar um novo usuário no Target, atribuir permissões de acesso a ele e editá-lo.</p>
+<p>Vamos lá?</p>
+<ol>
+<li>Adicionar novo usuário</li>
+</ol>
+<p>Para adicionar um novo usuário, acesse o seu perfil de usuário &gt; clique em Nova Administração &gt; Usuários &gt; e em Adicionar usuário.</p>
+<p>Aqui, você irá preencher os campos com as informações do usuário em questão, como: Nome, Sobrenome, E-mail, Cargo, Gênero e CPF.</p>
+<p>Apenas as informações de Nome, Sobrenome e E-mail são obrigatórias, porém quanto mais completo for o cadastro, mais fácil será para consultar tais informações, caso precise, ok?</p>
+<p>Se além de usuário, essa pessoa também é responsável pela execução ou gerenciamento dos projetos, você pode marcar esta opção e preencher os campos de Telefone e de Instituição.</p>
+<p>Assim, ao finalizar o cadastro do usuário, a pessoa também será cadastrada automaticamente no sistema como Responsável — otimizando o seu tempo.</p>
+<p>Quanto a senha do usuário: por padrão, ela é gerada e enviada para o e-mail informado durante o cadastro.</p>
+<p>Mas você pode desmarcar esta opção e criar uma senha para ele, inserindo-a nos respectivos campos.</p>
+<p>Além disso, você ainda pode adicionar uma foto do usuário, se desejar.</p>
+<p>Ao finalizar, clique em Salvar.</p>
+<p>Atribuir permissões de acesso ao usuário</p>
+<p>Após o usuário ser cadastrado, o sistema perguntará automaticamente se você deseja atribuir permissões a ele.</p>
+<p>Clique em Ok para ser redirecionado à aba de Permissões &gt; em seguida, clique em Atribuir Nova Permissão &gt; e escolha um dos papéis listados.</p>
+<p>Por padrão, o sistema tem alguns papéis pré-definidos, relacionados às funções de administrador, gestor e visualizador.</p>
+<p><a href="https://docs.google.com/document/u/6/d/1Kua2Yolszy2ygyuzESPKHLQuiz98W4P1buRrHh-rwf4/edit">Você encontra mais detalhes sobre os papéis no vídeo sugerido abaixo.</a></p>
+<p>No entanto, é possível criar papéis customizados de acordo com os módulos e recursos da plataforma.</p>
+<p><a href="https://docs.google.com/document/u/6/d/1DyfDVawDPhfCcRDHB70NaEBz6BcCkJvXt8dWLQ5D_KQ/edit">Nós também temos um vídeo explicando como você pode fazer isso.</a></p>
+<p>Dependendo do papel escolhido, você terá que selecionar alguma outra informação.</p>
+<p>Por exemplo: digamos que o usuário em questão poderá visualizar apenas as entidades de uma instituição específica.</p>
+<p>Após selecionar o papel Visualizador de Instituição, neste campo, você deverá informar a instituição que foi previamente cadastrada no sistema e selecioná-la.</p>
+<p>Desse modo, quando o usuário realizar o login no Target, verá apenas as entidades relacionadas a determinada instituição e não poderá adicionar nada ao sistema — já que seu papel é de visualizador.</p>
+<p>Caso seja necessário, você pode atribuir mais de uma permissão ao usuário.</p>
+<p>Todos os papéis são salvos automaticamente e ficam listados aqui.</p>
+<p>Se for necessário também, você pode remover algum deles clicando no X do respectivo papel.</p>
+<p>Agora, se você não clicou em Ok para ser redirecionado à aba de Permissões quando finalizou o cadastro do usuário e deixou para atribuir as permissões em outro momento, você pode pesquisar pelo usuário desejado no campo de busca &gt; depois, clicar no ícone da engrenagem &gt; em Editar &gt; e abrir a aba de Permissões para realizar o processo.</p>
+<p>Vale ressaltar que se o usuário acessar a plataforma antes de você atribuir alguma permissão a ele, ele não conseguirá visualizar nada, apenas a central de notificações e o próprio menu de usuário, ok?</p>
+<p>Em Dados Pessoais, você pode editar alguma informação do usuário, se desejar, e até apagá-lo.</p>
+<p>Mas caso não deseje exclui-lo e, sim, apenas remover temporariamente o acesso dele ao sistema, você pode inativar o usuário.</p>
+<p>Assim, ele permanecerá cadastrado na plataforma, mas não conseguirá acessá-la ao fazer o login.</p>
+<p>Para ver os usuários inativos, lembre-se de ativar este filtro antes de fazer alguma busca.</p>
+<p>No ícone de engrenagem, você ainda consegue solicitar a atualização de senha do usuário.</p>
+<p>Um link para redefinição de senha será enviado para o e-mail informado no cadastro e, ao acessá-lo, ele poderá modificá-la.</p>
+<p>Pronto!</p>
+<p>Agora, você já sabe como cadastrar usuários no Target.</p>
+<p>A Segurança de acesso à plataforma Target é dividida em perfis padrão que é predefinido pelo sistema ou os perfis customizados.</p>
+<p>0:18 / 4:02</p>
+<p>1x</p>
+<p>MANUAL DE GERENCIAMENTO E PERMISSÃO DE USUÁRIO</p>
+<p>Dicionário:<br />
+Entidade: forma genérica para qualquer cadastro realizado nos níveis de informação (N1 a N6), ou seja, todos os projetos, ações, etapas, etc são entidades.<br />
+Instituição: são as unidades organizacionais.</p>
+<ol>
+<li>Quadro Resumo</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Modalidade</th>
+<th>Papel</th>
+<th>Principais características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administrador</td>
+<td>1 - Administrador Plataforma</td>
+<td>Todas as funções de Administração, incluindo Permissão de Indicadores, Funcionalidades dos Níveis, Tema, Email e Central de Ajuda</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>2 - Administrador</td>
+<td>Gestão de Usuários e Permissões, Grupos, Perfil Customizado, configuração de páginas e Idioma</td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>3 - Administrador de Instituição</td>
+<td>Gerencia entidades de uma instituição específica</td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>4 - Administrador de Indicador</td>
+<td>Gerencia um indicador específico</td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Gestor</td>
+<td>Entidade</td>
+<td>Gerencia uma entidade específica e seus filhos</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Visualizador</td>
+<td>Visualizador</td>
+<td>Visualiza todas as entidades</td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Entidade</td>
+<td>Visualiza entidades específicas e entidades relacionadas a esta</td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Instituição</td>
+<td>Visualiza entidades relacionadas a uma instituição e as entidades do contexto</td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Indicador</td>
+<td>Visualiza um indicador específico</td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Nenhum papel</td>
+<td></td>
+<td>Não visualiza nenhuma entidade ou instituição / Apenas a Central de Notificações e o Menu do Usuário ficam disponível</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+<td>---</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Detalhamento das Permissões por Papel</li>
+</ol>
+<p>2.1 Nenhum papel atribuído</p>
+<p>Quando o usuário é criado ele não tem nenhum papel atribuído. Ao realizar o login, este usuário terá acesso à tela inicial, mas não visualizará nenhuma entidade e nenhuma instituição. Apenas a Central de Notificações e o Menu do Usuário ficam disponíveis (incluindo Minha Conta e Manual Online). Caso haja um grupo criado com a opção de "aplicar a todos" selecionada, este novo usuário será incluído nesse grupo e terá as permissões atribuídas a ele (mais detalhes no item “grupos”).  </p>
+<p>2.2 Usuários Administradores</p>
+<p>2.2.1 Administrador Plataforma</p>
+<p>Principal característica: Todas as funções de Administração, incluindo Permissão de Indicadores, Funcionalidades dos Níveis, Tema, Email e Central de Ajuda</p>
+<ul>
+<li>Gerenciar todas as entidades</li>
+<li>Visualizar todas as entidades</li>
+<li>Criar encaminhamentos</li>
+<li>Acesso à todas as funções do Menu Gerenciamento, incluindo offline</li>
+<li>Acesso aos cadastros auxiliares do Menu Gerenciamento</li>
+<li>Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Permissão específica em indicadores na coluna “Administrador Plataforma”</li>
+<li>Criar Apresentações e gerar offlines</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+</ul>
+<p>Administração: Gestão de Usuários e Permissões, Grupos, Perfil Customizado, Idioma, Permissão de Indicadores, Funcionalidades dos Níveis, Tema, Email e Central de Ajuda.</p>
+<p>2.2.2 Administrador</p>
+<p>Principal característica: Gestão de Usuários e Permissões, Grupos, Perfil Customizado e Idioma.</p>
+<ul>
+<li>Gerenciar todas as entidades</li>
+<li>Visualizar todas as entidades</li>
+<li>Criar encaminhamentos</li>
+<li>Acesso à todas as funções do Menu Gerenciamento, incluindo offline</li>
+<li>Acesso aos cadastros auxiliares do Menu Gerenciamento</li>
+<li>Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Permissão específica em indicadores na coluna “Administrador”</li>
+<li>Criar Apresentações e gerar offlines</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+<li>Administração: Gestão de Usuários e Permissões, Grupos, Perfil Customizado e Idioma.</li>
+</ul>
+<p>2.2.3 Administrador de Indicador</p>
+<p>Principal característica: gerencia um indicador específico.</p>
+<ul>
+<li>Não gerencia nem visualiza nenhuma entidade</li>
+<li>Não é exibido o menu gerenciamento</li>
+<li>Tem acesso ao gerenciador e a matriz de indicadores, com permissão de editar o indicador específico selecionado</li>
+<li>Permissão específica em indicadores na coluna “Gestor de Indicador”</li>
+<li>Acesso rápido e Central de Notificações</li>
+</ul>
+<p>2.2.4 Administração de Instituição</p>
+<p>Principal característica: gerência entidades de uma instituição específica.</p>
+<ul>
+<li>Gerencia todas entidades de uma instituição específica (edita a entidade e acessa o menu opções). Cria novas entidades em entidades da instituição apenas atribuindo à entidade filha para a mesma instituição específica. Não consegue criar entidades abaixo de entidades que não sejam a específica. Não cria entidades nem na instituição acima da específica.</li>
+</ul>
+<p>Exemplo:</p>
+<p>A. Instituições: Inst. pai - Presidência/ Inst. filha: Diretoria A<br />
+Entidades: N1 Objetivo X (Presidência) / N2 Projeto Z (Diretoria A)</p>
+<p>O Administrador da instituição Diretoria A:</p>
+<ul>
+<li>No gerenciador “normal” não vê o objetivo X, consequentemente não chega no projeto Z.</li>
+<li>Consegue ver o Objetivo X no gerenciador beta. Também visualiza na página da instituição específica e na consulta rápida. Através desses 2 caminhos consegue fazer a gestão.</li>
+<li>Não pode criar projetos no Objetivo X - É da Instituição pai</li>
+<li>Pode gerenciar o Projeto Z (previamente existente) - É da Instituição especifica</li>
+<li>
+<p>Só pode criar entidades abaixo (etapas) que sejam da Instituição específica ou da Instituição pai</p>
+</li>
+<li>
+<p>Cria encaminhamentos</p>
+</li>
+<li>Acesso no Menu Gerenciamento apenas: Relatórios Gerenciais, Reuniões/Ata e encaminhamentos (apenas relacionados à entidade específica).</li>
+<li>Não tem acesso aos cadastros auxiliares do Menu Gerenciamento</li>
+<li>Não acessa a Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Acesso ao Módulo de Apresentação</li>
+<li>Permissão específica em indicadores na coluna “Gestor Secretaria”</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+</ul>
+<p>2.3 Usuários Gestores</p>
+<p>2.3.1 Gestor de Entidades</p>
+<p>Principal característica: gerencia uma entidade específica e seus filhos.</p>
+<ul>
+<li>Gerencia uma entidade específica e seus filhos (edita a entidade e acessa o menu opções)</li>
+<li>Visualiza as entidades acima da entidade específica</li>
+<li>Cria encaminhamentos</li>
+<li>Acesso no Menu Gerenciamento apenas: Relatórios Gerenciais, Reuniões/Ata e encaminhamentos (apenas relacionados à entidade específica).</li>
+<li>Não tem acesso aos cadastros auxiliares do Menu Gerenciamento</li>
+<li>Não acessa a Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Acesso ao Módulo de Apresentação</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+</ul>
+<p>2.4 Usuários Visualizadores</p>
+<p>2.4.1 Visualizador</p>
+<p>Principal característica: visualiza todas as entidades</p>
+<ul>
+<li>Não gerencia nenhuma entidade</li>
+<li>Visualizar todas as entidades</li>
+<li>Não cria encaminhamentos</li>
+<li>Acesso apenas aos relatórios gerenciais do Menu Gerenciamento</li>
+<li>Não tem acesso aos cadastros auxiliares do Menu Gerenciamento</li>
+<li>Não acessa a Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Permissão específica em indicadores na coluna “Visualizador”</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+</ul>
+<p>2.4.2 Visualizador de Entidade</p>
+<p>Principal característica: visualiza entidades específicas e entidades relacionadas a esta.  </p>
+<ul>
+<li>Não gerencia nenhuma entidade</li>
+<li>Visualiza apenas entidades específicas, seu pai e filhos no quadro estratégico (checar) e na consulta rápida. Visualiza apenas entidades específicas seus filhos, irmãos e a árvore abaixo dos irmãos no bloco detalhado.</li>
+<li>Não cria encaminhamentos</li>
+<li>Acesso apenas aos relatórios gerenciais do Menu Gerenciamento</li>
+<li>Não tem acesso aos cadastros auxiliares do Menu Gerenciamento</li>
+<li>Não acessa a Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+</ul>
+<p>2.4.3 Visualizador de Instituição</p>
+<p>Principal característica: visualiza entidades relacionadas a uma instituição e as entidades do contexto.</p>
+<ul>
+<li>Não gerencia nenhuma entidade</li>
+<li>Visualiza apenas as entidades da instituição específica no quadro estratégico e na consulta rápida. Visualiza todas as entidades de uma instituição específica, o pai, irmãos e filhos (independente da instituição dos irmãos e filhos) no bloco detalhado.</li>
+<li>Não cria encaminhamentos</li>
+<li>Não tem acesso aos relatórios gerenciais do Menu Gerenciamento</li>
+<li>Não tem acesso ao Menu Gerenciamento</li>
+<li>Não acessa a Configuração Geral de Páginas (Página do Usuário e dos Níveis de Informação)</li>
+<li>Permissão específica em indicadores na coluna “Visualizado Secretaria”</li>
+<li>Acesso rápido e Central de Notificações</li>
+<li>Central de Notificações</li>
+</ul>
+<p>2.4.4 Visualizador de Indicador</p>
+<p>Principal característica: visualiza um indicador específico</p>
+<ul>
+<li>Não gerencia nem visualiza nenhuma entidade</li>
+<li>Não é exibido o menu gerenciamento</li>
+<li>Tem acesso ao gerenciador e a matriz de indicadores</li>
+<li>Visualiza apenas o indicador selecionado</li>
+<li>Permissão específica em indicadores na coluna “Visualizador”</li>
+<li>Acesso rápido e Central de Notificações</li>
+</ul>
+<p>2.5 Usuários Visualizadores</p>
+<p>2.5.1 Perfis Customizados</p>
+<p>Além dos perfis padrão, é possível criar perfis customizados habilitando funcionalidades específicas.</p>
+<p>Grupos</p>
+<p>Principais características</p>
+<ul>
+<li>Ao criar um grupo, é possível atribuir um ou mais dos perfis de permissão do acima.</li>
+<li>Poderão ser incluídos no grupo usuários já cadastrados. Há também a opção de incluir todos os usuários já existentes nesse grupo. Caso esta opção seja selecionada, todos que forem cadastrados posteriormente já estarão automaticamente no grupo.</li>
+<li>Cada usuário terá as permissões dos grupos que faz parte, além de suas permissões individuais.</li>
+<li>
+<p>Um usuário poderá não ter nenhuma permissão específica, mas por estar incluído em algum grupo, terá as permissões dos grupos que está inserido.</p>
+</li>
+<li>
+<p>Indicadores</p>
+</li>
+</ul>
+<p>As permissões de indicador estão relacionadas aos perfis de permissão padrão, indicando o que cada perfil pode executar.</p>
+<p>Correspondências:</p>
+<ul>
+<li>Administrador Plataforma</li>
+<li>Administrador</li>
+<li>Visualizador</li>
+<li>Gestor Secretaria = Administrador de Instituição</li>
+<li>Visualizador Secretaria = Visualizador de Instituição</li>
+<li>Gestor de Indicador = Administrador de Indicador</li>
+</ul>
+<p>Na Plataforma Target temos a opção de customizar a exibição das propriedades em cada funcionalidade.<br />
+Descrição: campo de descrição da entidade.</p>
+<p>Status informado: campo de status informado da entidade. O status informado, diferente do status automático do Target através das datas, é opcional e é utilizado para organizações que necessitem de uma forma manual de escolha do status.</p>
+<p>Peso: o campo peso é utilizado para o cálculo do percentual de conclusão da entidade superior. Deve ser habilitado apenas se a organização trabalha com cálculo de média ponderada para obtenção do grau de conclusão. À nível estratégico, é utilizado para o funcionamento do BSC (Balanced Score Card), definindo pesos para os objetivos estratégicos.</p>
+<p>Status: define se o nível de informação terá o status automático, ou seja, a partir das datas estabelecidas.</p>
+<p>Datas: define se a entidade terá o atributo datas. Em alguns casos, por exemplo, os níveis estratégicos (geralmente fica no N1 ou N1 e N2) não possuem datas específicas por que seus prazos são calculados a partir dos demais níveis.</p>
+<p>Duração: campo que definirá a duração da entidade, ou seja, o tempo de execução da entidade.</p>
+<p>Percentual de conclusão calculado automaticamente: o sistema irá calcular o percentual da entidade de acordo com as entidades filhas. Por exemplo, se um projeto tem 4 etapas (filhos), sendo 2 concluídas (ou seja, com 100%) e 2 à iniciar, o sistema irá considerar que o projeto está em 50%. É realizado uma média ponderada do peso e percentual de conclusão.</p>
+<p>Repactuação: habilita a função que exibe a repactuação de prazos no gráfico de evolução, com a data da repactuação e o usuário que gerou a mudança.</p>
+<p>TAG’s: habilita a possibilidade de atribuir TAG ao nível específico. TAG’s são como categorias que ajudam a localizar e agrupar projetos e etapas.</p>
+<p>Campo monitor: define se o nível de informação terá um monitor atribuído diretamente. Este campo é utilizado por organizações que possuem colaboradores que auxiliarão no monitoramento da entidade mas não são responsáveis por sua execução. A plataforma utilizará no momento do cadastro do monitor o mesmo banco de responsáveis (gestores) incluídos nos cadastros auxiliares.</p>
+<p>Responsável: define se o nível de informação terá um gestor responsável atribuído diretamente.</p>
+<p>Consultor: define se o nível de informação terá um consultor atribuído diretamente. Este campo é utilizado por organizações que possuem colaboradores que auxiliarão no monitoramento da entidade mas não são responsáveis por sua execução. A plataforma utilizará no momento do cadastro do monitor o mesmo banco de responsáveis (gestores) incluídos nos cadastros auxiliares.</p>
+<p>Responsável somente administrador: habilitar essa função torna que o campo responsável disponível para alteração apenas para usuários administradores</p>
+<p>Ativo/inativo só para gestores: permite que apenas os gestores possam inativar ou reativar uma entidade.</p>
+<p>Ativo/inativo: permite que os usuários possam inativar ou reativar uma entidade.</p>
+<p>GRÁFICOS</p>
+<p>Gráfico de Bloco: exibe o gráfico de bloco no momento do cadastro como possibilidade para habilitar. O gráfico exibe as entidades filhas com prazos de término previsto e término realizado. É exibido também um ícone de “carinha” relacionado com o status (carinha triste e carinha feliz). Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<p>Selecionar gráficos no “Meus Projetos”:</p>
+<p>Gráfico de Cronograma: exibe o gráfico de cronograma no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<p>Gráfico de Cronograma Orçado: exibe o gráfico de cronograma orçado no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<p>Gráfico de Bloco já habilitado: ao marcar esta funcionalidade a opção de bloco já estará habilitada no momento de criação de uma entidade. Essa função evita que o usuário esqueça de marcar o gráfico de bloco para que a entidade apareça no gráfico.</p>
+<p>Gráfico de Bloco Detalhado já habilitado: ao marcar esta funcionalidade a opção de bloco detalhado já estará habilitada no momento de criação de uma entidade. Essa função evita que o usuário esqueça de marcar o gráfico de bloco detalhado para que a entidade apareça no gráfico.</p>
+<p>Gráfico de Bloco Detalhado: exibe o gráfico de bloco detalhado no momento do cadastro como possibilidade para habilitar. O gráfico exibe as entidades filhas com prazos de início e término previsto e início e término realizado, além do responsável e descrição.Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<p>Gráfico de Diagrama: exibe o gráfico de diagrama no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<p>Gráfico de Bloco Agrupado: exibe o gráfico de bloco agrupado no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado. Mais detalhes clique aqui <a href="https://factarget.movidesk.com/kb/article/224171/17-bloco-agrupado">Gráfico de Bloco Agrupado</a>.</p>
+<p>Gráfico de Acompanhamento: exibe o gráfico de acompanhamento no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<p>FINANCEIRO</p>
+<p>Acompanhamento financeiro da entidade: habilita a funcionalidade de acompanhamento financeiro.</p>
+<p>Coluna Código Financeiro: habilita um campo para inclusão do código financeiro da entidade.</p>
+<p>Campo “empenhado” no acompanhamento financeiro: habilita o campo empenhado para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar quanto já foi empenhado para a entidade.</p>
+<p>Campo “liquidado” no acompanhamento financeiro: habilita o campo liquidado para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar quanto já foi liquidado para a entidade.</p>
+<p>Campo “orçado” no acompanhamento financeiro: habilita o campo orçado para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar o valor orçado para a entidade.</p>
+<p>Campo “pago” no acompanhamento financeiro: habilita o campo pago para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar quanto já foi pago para a entidade.</p>
+<p>Coluna 'Percentual De Execução' No Acompanhamento Financeiro: exibe a coluna de percentual de execução financeira que por padrão é calculada pela relação do pago x orçado.</p>
+<p>Meta Celula Valor Interno:</p>
+<p>Células:</p>
+<p>Coluna 'Grupo De Despesa' No Acompanhamento Financeiro: habilita segmentação financeira por grupo de despesa. Os grupos de despesas funcionam como centros de custos em que os gestores poderão alocar financeiramente.</p>
+<p>LISTAGEM</p>
+<p>Funcionalidades opcionais da listagem no gerenciamento:</p>
+<p>Botão exibir filhos: habilita o botão para descer um nível de informação.</p>
+<p>Código LOA: exibe o código financeiro na listagem.</p>
+<p>Instituição: exibe a instituição que na listagem de entidades.</p>
+<p>Número de filhos já cadastrados: exibe o quantitativo de filhos que a entidade possui na listagem.</p>
+<p>Link para página de gestão: habilita o botão de acessar a página (botão de corrente) no gerenciamento.</p>
+<p>MENU DE AÇÕES</p>
+<p>Conclusão:</p>
+<p>Copiar e Mover: habilita a funcionalidade que possibilita copiar ou mover uma entidade</p>
+<p>Editar acompanhamento: habilita a inclusão da função acompanhamento. Esta funcionalidade permite acompanhar meta e realizado apenas com os valores, gerando um gráfico colunas ou uma tabela de valores simples.</p>
+<p>Menu de Acões: habilita a visualização do menu de ações, que é um caminho para diversas funcionalidades como observações, galeria de imagens, riscos, problemas, etc.</p>
+<p>Galeria de Imagens: habilita a funcionalidade de galeria de imagem, permitindo a inclusão de imagens no nível de informação.</p>
+<p>Geolocalização: habilita a funcionalidade que permite georreferenciar a entidade, por região ou coordenada geográfica.</p>
+<p>Perspectiva e Resultado: habilita a funcionalidade de perspectiva e resultado.</p>
+<p>Status Macro: habilita o status macro.</p>
+<p>Marco Crítico: habilita a inclusão de marcos críticos.</p>
+<p>Restringir Copiar e Mover Para Administrador: restringe a funcionalidade mover e copiar apenas para administradores.</p>
+<p>Restringir Copiar e Mover Para Gestores : restringe a funcionalidade mover e copiar apenas para gestores.</p>
+<p>Problemas: habilita a funcionalidade que permite registrar problemas e ações corretivas.</p>
+<p>Providência: habilita a inclusão de providências.</p>
+<p>Observação: habilita a utilização de observações na entidade. As observações são exibidas nas notas técnicas.</p>
+<p>Repositório de Dados: habilita a funcionalidade de repositório de dados, permitindo a inclusão de arquivos no nível de informação. Funciona como uma área de anexos da entidade.</p>
+<p>Gerenciador de Riscos: habilita a funcionalidade que permite registrar riscos e ações de contingência.</p>
+<p>Gerenciador EGP:</p>
+<p>Habilitar Check List: habilita a utilização da funcionalidade de check list.</p>
+<p>STATUS</p>
+<p>Habilitar entidades com Status não planejado na busca: habilitar essa funcionalidade faz com que as entidades que não possuem datas (ou seja, com status de não planejado) possam ser pesquisadas nos campos de busca como a consulta rápida, por exemplo.</p>
+<p>Habilitar Status não planejado na percentual e nas datas: habilitar essa funcionalidade faz com que as entidades que não possuem datas (ou seja, com status de não planejado) sejam consideradas ao exibir o percentual de conclusão das entidades.</p>
+<p>Habilitar exibição do Status Informado na Página do Painel: torna visível na página da entidade o status informado, que é exibido na parte superior da tela.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
