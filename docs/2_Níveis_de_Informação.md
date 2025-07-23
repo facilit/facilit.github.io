@@ -1,6 +1,8 @@
 # 2. Níveis de Informação
 
 
+
+
 Níveis de Informação
 
 A ferramenta é estruturada em camadas e nessas camadas vamos destrinchando os elementos;
