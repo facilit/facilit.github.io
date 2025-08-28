@@ -12,7 +12,7 @@
   overflow: hidden;
   width: 150%;        /* garante largura total */
   max-width: 150%;    /* não limita */
-  margin: 1rem 0;     /* espaço em cima/baixo */
+  margin: 0;     /* espaço em cima/baixo */
 }
 
 .video-container iframe {
