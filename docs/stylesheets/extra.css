@@ -7,10 +7,12 @@
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%; /* mantém proporção 16:9 */
   height: 0;
   overflow: hidden;
-  max-width: 100%;
+  width: 100%;        /* garante largura total */
+  max-width: 100%;    /* não limita */
+  margin: 1rem 0;     /* espaço em cima/baixo */
 }
 
 .video-container iframe {
@@ -21,3 +23,4 @@
   height: 100%;
   border: 0;
 }
+
