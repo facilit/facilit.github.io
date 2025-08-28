@@ -26,6 +26,7 @@ nav:
   - Níveis de Informação:
     - Níveis de Informação: 2_Níveis_de_Informação.md
     - Criação dos Níveis (N1, N2, N3, N4, N5 e N6): 2.1_Criação_dos_Níveis_(N1,_N2,_N3,_N4,_N5_e_N6).md
+    - Criando entidades: Criando_entidades.md
     - Como Editar e Remover Entidades: 2.2_Como_Editar_e_Remover_Entidades.md
   - Gestão de Projetos:
     - Gestão de Projetos: 3_Gestão_de_Projetos.md
@@ -83,6 +84,5 @@ nav:
     - Mapa Mental: 13.11_Mapa_Mental.md
     - Kanban: 13.12_Kanban.md
   - Configuração da Propagação de Datas: Configuração_da_Propagação_de_Datas.md
-  - Criando entidades: Criando_entidades.md
   - Criação de Páginas: Criação_de_Páginas.md
   - Metodologias de Gestão: Metodologias_de_Gestão.md
