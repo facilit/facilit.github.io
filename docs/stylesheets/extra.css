@@ -10,8 +10,8 @@
   padding-bottom: 100%; /* mantém proporção 16:9 */
   height: 0;
   overflow: hidden;
-  width: 150%;        /* garante largura total */
-  max-width: 150%;    /* não limita */
+  width: 100%;        /* garante largura total */
+  max-width: 100%;    /* não limita */
   margin: 0;     /* espaço em cima/baixo */
 }
 
