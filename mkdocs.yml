@@ -40,13 +40,13 @@ nav:
       - Problemas: 3.4.6_Problemas.md
     - Envolvidos nos Projetos:
       - Envolvidos nos Projetos: 3.3_Envolvidos_nos_Projetos.md
-      - Últimas atualizações: 3.4_Últimas atualizações.md
+      - Últimas atualizações: 3.4_Últimas_atualizações.md
       - Repositório de Documentos: 3.4.5_Repositório_de_Documentos.md
       - Riscos: 3.4.7_Riscos.md
     - Modelos de Entidades:
       - Modelos de Entidades: 3.5_Modelos_de_Entidades.md
       - Criar entidade baseada em template: 3.5.1_Criar_entidade_baseada_em_template.md
-      - Gerenciador de Templates: 3.5.2_Gerenciador de Templates.md
+      - Gerenciador de Templates: 3.5.2_Gerenciador_de_Templates.md
     - Configurações de Datas: 3.6_Configurações_de_Datas.md
     - Checklist: 3.7_Checklist.md
     - Importação de entidades: 3.8_Importação_de_entidades.md
@@ -54,7 +54,8 @@ nav:
     - Financeiro: 3.10_Financeiro.md
     - Imagem mapeada: 3.11_Imagem_mapeada.md
     - Gantt Sincronizado: 3.12_Gantt_Sincronizado.md
-    - Criando Projetos no Gantt: 3.12.1_Criando Projetos no Gantt.md
+    - Criando Projetos no Gantt: 3.12.1_Criando_Projetos_no_Gantt.md
+    - Importando Arquivos do Project: 3.12.2_Importando_Arquivos_do_Project.md 
     - Canvas: 3.21_Canvas.md
   - Gestão Estratégica: 4_Gestão_Estratégica.md
   - Gestão de Indicadores:
