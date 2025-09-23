@@ -68,8 +68,9 @@ nav:
     - Bloco Detalhado: 3.20_Bloco_Detalhado.md
     - Canvas: 3.21_Canvas.md
     - Quadro de Visões: 3.22_Quadro_de_Visões.md
-  - Gestão Estratégica: 4_Gestão_Estratégica.md
-  - Gestão de Indicadores:
+  - Gestão Estratégica:
+     - Gestão Estratégica: 4_Gestão_Estratégica.md
+    - Gestão de Indicadores:
     - Gestão de Indicadores: 5_Gestão_de_Indicadores.md
     - Gerenciador de Indicadores: 5.1_Gerenciador_de_Indicadores.md
     - Matriz de Indicadores: 5.2_Matriz_de_Indicadores.md
