@@ -101,7 +101,8 @@ nav:
     - Exportação de Indicadores: 7.3_Exportação_de_Indicadores.md
     - Dashboard ODS: 7.8_Dashboard_ODS.md
     - Gestão da Comunicação: 8_Gestão_da_Comunicação.md
-  - Geolocalização: 9_Geolocalização.md
+  - Geolocalização:
+    - Geolocalização: 9_Geolocalização.md
   - Administração da Plataforma:
     - Administração da Plataforma: 10_Administração_da_Plataforma.md
     - Cadastros Auxiliares: 10.1_Cadastros_Auxiliares.md
