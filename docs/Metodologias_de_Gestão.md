@@ -1,2 +1,0 @@
-# Metodologias de Gestão
-
