@@ -10,7 +10,7 @@ theme:
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
-  - assets/bridge-brand.js?v=8
+  - assets/bridge-brand.js?v=9
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -18,7 +18,8 @@ markdown_extensions:
 nav:
   - Início: index.md
   - Visão Geral:
-    - Visão Geral: 1.Visão_Geral.md
+    - Visão Geral: 1.Visão_Geral__brand-target.md
+    - Visão Geral: 1.Visão_Geral__brand-serpro.md
     - Um pouco de história: 1.1_Um_pouco_de_história.md
     - A Plataforma: 1.2_A_Plataforma.md
     - Estrutura da Plataforma: 1.3_Estrutura_da_Plataforma.md
