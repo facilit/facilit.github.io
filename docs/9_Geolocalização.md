@@ -1,4 +1,4 @@
-# 9. Geolocalização
+# Geolocalização
 
 A geolocalização é uma solução que permite localizar geograficamente os projetos ou ações que garante ao gestor um amplo acompanhamento visual do planejamento.
 
