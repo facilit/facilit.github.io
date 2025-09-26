@@ -1,4 +1,4 @@
-# 4. Gestão Estratégica
+# Gestão Estratégica
 
 Aderência total ao Balanced Scorecard – BSC.
 
