@@ -1,4 +1,4 @@
-## 11. Aplicativos Android & IOS
+## Aplicativos Android & IOS
 
 Mesmo que você esteja em viagem, assistindo um filme ou na fila do café. 
 O aplicativo da **Plataforma** para Android e iOS lhe ajuda a continuar conectado com o seu trabalho não importa onde você esteja! 
