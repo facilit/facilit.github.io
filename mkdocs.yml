@@ -10,7 +10,7 @@ theme:
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
-  - assets/bridge-brand.js?v=2
+  - assets/bridge-brand.js?v=3
 markdown_extensions:
   - admonition
   - pymdownx.details
