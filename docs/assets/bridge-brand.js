@@ -1,21 +1,22 @@
 /*!
- * bridge-brand.js v10
- * - Brand via HASH: #brand=...&brandColor=...
+ * bridge-brand.js v11
+ * - Brand via HASH (#brand=...&brandColor=...)
  * - Sufixo “Plataforma {brand}”, cor, antitrava, preserva hash e injeta em links
- * - Fase 1: Visão Geral por brand (esconde item do brand errado e força rota correta)
+ * - Visão Geral por brand: esconde item do brand errado e força rota correta
+ * - Warm-up: garante filtro logo na 1ª carga (sem precisar clicar)
  */
 (function () {
   const BASE = "Plataforma";
   const LOG  = (...a) => { try { console.log("[bridge-brand]", ...a); } catch {} };
   const esc  = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-  // ====== Brand <-> sufixo (apenas Visão Geral na fase 1) ======
+  // ====== Brand <-> sufixo (fase 1: só Visão Geral) ======
   const BRAND_SUFFIX_MAP = { "Target":"__brand-target", "Serpro Visão":"__brand-serpro" };
   const ALL_SUFFIXES = Object.values(BRAND_SUFFIX_MAP);
   const RE_VISAO = /1\.(?:Vis(?:ão|%C3%A3)o)_Geral/i;
-  const isVisaoGeralPath = p => RE_VISAO.test(p||"");
+  const isVisaoGeralPath   = p => RE_VISAO.test(p||"");
   const hrefHasBrandSuffix = href => ALL_SUFFIXES.some(s => (href||"").includes(s));
-  const suffixForBrand = b => BRAND_SUFFIX_MAP[b] || null;
+  const suffixForBrand     = b => BRAND_SUFFIX_MAP[b] || null;
 
   // ---------- params ----------
   function getParams(){
@@ -82,25 +83,23 @@
     const s=document.createElement("style"); s.id=id; s.textContent=css; document.head.appendChild(s);
   }
 
-  // ========== NEW: preservar href original para conseguir filtrar ==========
+  // ===== preservar href original p/ filtrar antes da reescrita =====
   const getOrigHref = (a) => a.getAttribute("data-orig-href") || a.getAttribute("href") || "";
 
-  // ---------- decora links internos mantendo hash e (Visão Geral) forçando sufixo do brand ----------
+  // ---------- decora links internos ----------
   function decorateInternalLinks(root){
     const container=root||document;
     const links=container.querySelectorAll("a[href]");
     const wantHash = DESIRED_HASH || buildDesiredHash(readStored());
     links.forEach(a=>{
-      const currentHref = a.getAttribute("href");
-      if (!currentHref) return;
-      // guarda href original uma única vez
+      const currentHref = a.getAttribute("href"); if(!currentHref) return;
       if (!a.hasAttribute("data-orig-href")) a.setAttribute("data-orig-href", currentHref);
 
       if (currentHref.startsWith("#") || currentHref.startsWith("mailto:") || currentHref.startsWith("tel:")) return;
       let url; try { url = new URL(currentHref, location.href); } catch { return; }
       if (url.origin !== location.origin) return;
 
-      // Fase 1: Visão Geral → força sufixo correto baseado NO HREF ORIGINAL
+      // Fase 1: Visão Geral — força sufixo correto com base no href ORIGINAL
       const orig = getOrigHref(a);
       if (isVisaoGeralPath(orig)) {
         const suf = suffixForBrand(params.brand);
@@ -122,18 +121,19 @@
 
   // ---------- filtro de menu (usa href ORIGINAL) ----------
   function filterVisaoGeralInNav(brand){
-    const want = suffixForBrand(brand);
-    if(!want) return;
+    const want = suffixForBrand(brand); if(!want) return;
     const links = document.querySelectorAll(".md-nav a[href]");
+    let hid = 0;
     links.forEach(a=>{
       const orig = getOrigHref(a);
       if (!isVisaoGeralPath(orig)) return;       // só Visão Geral
       const has = hrefHasBrandSuffix(orig);
-      if (!has) return;                          // se não tem sufixo, não mexe
+      if (!has) return;                          // sem sufixo? não mexe
       const matches = orig.includes(want);
       const li = a.closest("li") || a.parentElement;
-      if (li) li.style.display = matches ? "" : "none";
+      if (li) { li.style.display = matches ? "" : "none"; if (!matches) hid++; }
     });
+    return hid; // retorna quantos ocultou (para o warm-up saber)
   }
 
   function redirectIfWrongVisaoGeral(brand){
@@ -182,11 +182,38 @@
     finally{ applying=false; }
   }
 
+  // --- Warm-up: aguarda a sidebar existir e aplica filtro algumas vezes
+  function navReady(){ return document.querySelectorAll(".md-nav a[href]").length > 0; }
+  function warmupFilter(){
+    let runs = 0;
+    const tick = () => {
+      runs++;
+      decorateInternalLinks(document);                 // garante data-orig-href
+      const hidden = filterVisaoGeralInNav(params.brand);
+      if (hidden > 0 || runs >= 10) return;            // parou assim que ocultar algo, ou depois de 10 tentativas (~500ms)
+      setTimeout(tick, 50);
+    };
+    tick();
+  }
+
   // boot: espera DOM do Material
   let tries=0;
   (function waitDom(){
     const ready=document.querySelector(".md-content");
-    if (ready || tries>=30) { applyOnce(); observeSpa(); return; }
+    if (ready || tries>=30) {
+      observeSpa();
+      applyOnce();
+      // warm-up: se a nav ainda não está pronta, aguarda e filtra
+      if (!navReady()) {
+        // roda poucas tentativas para pegar a 1ª montagem da nav
+        warmupFilter();
+      } else {
+        // nav já existe: ainda assim roda 2 passes rápidos para garantir
+        setTimeout(applyOnce, 80);
+        setTimeout(applyOnce, 200);
+      }
+      return;
+    }
     tries++; requestAnimationFrame(waitDom);
   })();
 
