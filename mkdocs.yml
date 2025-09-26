@@ -17,6 +17,7 @@ markdown_extensions:
   - pymdownx.superfences
 nav:
   - Início: index.md
+  - Início: index__brand-planejar.md
   - Visão Geral:
     - Visão Geral: 1.Visão_Geral__brand-target.md
     - Visão Geral: 1.Visão_Geral__brand-serpro.md
