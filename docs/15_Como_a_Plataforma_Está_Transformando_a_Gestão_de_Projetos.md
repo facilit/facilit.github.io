@@ -1,4 +1,4 @@
-## 15. Histórias de Sucesso: Como a Plataforma Está Transformando a Gestão de Projetos
+## Histórias de Sucesso: Como a Plataforma Está Transformando a Gestão de Projetos
 
 Quando falamos em **gestão de projetos**, a **eficiência** e a **integração de dados** são essenciais para o sucesso de qualquer organização. Mas como alcançar esses objetivos de forma prática e eficaz? A resposta está em histórias de sucesso – relatos reais de como empresas e organizações estão utilizando a **Plataforma** para superar desafios, melhorar a execução de projetos e otimizar o planejamento estratégico.
 
