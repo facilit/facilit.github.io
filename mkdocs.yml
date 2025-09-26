@@ -9,6 +9,8 @@ theme:
     assets/logo_branca.png
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - assets/bridge-brand.js
 markdown_extensions:
   - admonition
   - pymdownx.details
