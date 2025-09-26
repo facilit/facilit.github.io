@@ -1,4 +1,4 @@
-# 3. Gestão de Projetos
+# Gestão de Projetos
 
 - Suporta a gestão dos objetivos, projetos, etapas, programas e do portfólio de projetos.
 - Possibilita definir prazo de execução de cada atividade do cronograma.
