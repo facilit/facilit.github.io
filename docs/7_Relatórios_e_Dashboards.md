@@ -1,4 +1,4 @@
-# 7. Relatórios e Dashboards
+# Relatórios e Dashboards
 
 - Visualização do resultado da organização de forma consolidada, com resumos navegáveis capazes de rastrear o cumprimento de metas, descendo até o nível operacional, de modo a garantir a observância da estratégia na execução dos projetos.
 
