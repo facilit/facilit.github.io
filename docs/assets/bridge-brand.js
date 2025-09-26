@@ -1,16 +1,33 @@
 /*!
- * bridge-brand.js v8
- * - Aplica sufixo de brand (“Plataforma {brand}”) em header, menu, conteúdo, TOC e footer
- * - Aplica cor (brandColor) no header e realces
- * - Usa HASH (#brand=...&brandColor=...) para não interferir no SPA do Material
- * - Antitrava: reentrância + debounce + escopo de observação reduzido
- * - Persiste brand/brandColor em sessionStorage e preserva hash em navegação interna
- * - Kill-switch: #noBrand=1 ou ?noBrand=1
+ * bridge-brand.js v9
+ * - Brand via HASH: #brand=...&brandColor=...
+ * - Aplica sufixo (“Plataforma {brand}”) em header, menu, conteúdo, TOC, footer
+ * - Cor do header/realces (brandColor)
+ * - Antitrava (reentrância + debounce + escopo reduzido)
+ * - Preserva hash e injeta hash em links internos
+ * - (Fase 1) Filtra/força versão de "Visão Geral" por brand
+ *   Arquivos esperados:
+ *   - 1.Visão_Geral__brand-target.md
+ *   - 1.Visão_Geral__brand-serpro.md
  */
+
 (function () {
   const BASE = "Plataforma";
   const LOG  = (...a) => { try { console.log("[bridge-brand]", ...a); } catch {} };
   const esc  = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  // ====== Brand <-> sufixo de arquivo (apenas Visão Geral na fase 1) ======
+  const BRAND_SUFFIX_MAP = {
+    "Target":       "__brand-target",
+    "Serpro Visão": "__brand-serpro"
+  };
+  const ALL_SUFFIXES = Object.values(BRAND_SUFFIX_MAP);
+
+  // detecta se um href/path é uma página "Visão Geral" com sufixo de brand
+  const RE_VISAO = /1\.(?:Vis(?:ão|%C3%A3)o)_Geral/i;
+  function isVisaoGeralPath(p) { return RE_VISAO.test(p || ""); }
+  function hrefHasBrandSuffix(href) { return ALL_SUFFIXES.some(s => (href||"").includes(s)); }
+  function suffixForBrand(b) { return BRAND_SUFFIX_MAP[b] || null; }
 
   // ---------- leitura de parâmetros (hash tem prioridade), + kill-switch ----------
   function getParams(){
@@ -39,7 +56,6 @@
     return u.toString() ? ("#" + u.toString()) : "";
   }
 
-  // Se entrou sem brand/brandColor, tenta restaurar do storage
   if (!params.brand && !params.brandColor) {
     const st = readStored();
     if (st.brand || st.brandColor) {
@@ -48,7 +64,6 @@
       params.brandColor = st.brandColor || "";
     }
   }
-  // sempre que definimos params, persistimos
   saveStored(params);
 
   const DESIRED_HASH = buildDesiredHash(params);
@@ -125,11 +140,28 @@
       try { url = new URL(href, location.href); } catch { return; }
       if (url.origin !== location.origin) return;
 
-      // se já há brand no hash, mantém; senão, aplica
+      // (fase 1) Se for Visão Geral, força o arquivo do brand correto
+      if (isVisaoGeralPath(url.pathname)) {
+        const suf = suffixForBrand(params.brand);
+        if (suf) {
+          // se aponta para a versão errada ou sem sufixo, corrige
+          let p = url.pathname;
+          if (!hrefHasBrandSuffix(p)) {
+            // ex.: 1.Visão_Geral.md  ->  1.Visão_Geral__brand-target.md
+            p = p.replace(RE_VISAO, (m) => m + "__brand-target").replace("__brand-target", suf);
+          } else {
+            // troca sufixo existente
+            ALL_SUFFIXES.forEach(s => { p = p.replace(s, suf); });
+          }
+          url.pathname = p;
+        }
+      }
+
+      // aplica hash do brand se ainda não existir
       if (!/([#&?])brand=/.test(url.hash)) {
         url.hash = want;
-        a.setAttribute("href", url.toString());
       }
+      a.setAttribute("href", url.toString());
     });
   }
 
@@ -141,12 +173,68 @@
     if (!want) return;
     try {
       const url = new URL(a.getAttribute("href"), location.href);
-      if (url.origin === location.origin && !/([#&?])brand=/.test(url.hash)) {
-        url.hash = want;
+      if (url.origin === location.origin) {
+        // mesma lógica de decorateInternalLinks, mas inline no clique
+        if (isVisaoGeralPath(url.pathname)) {
+          const suf = suffixForBrand(params.brand);
+          if (suf) {
+            let p = url.pathname;
+            if (!hrefHasBrandSuffix(p)) {
+              p = p.replace(RE_VISAO, (m) => m + "__brand-target").replace("__brand-target", suf);
+            } else {
+              ALL_SUFFIXES.forEach(s => { p = p.replace(s, suf); });
+            }
+            url.pathname = p;
+          }
+        }
+        if (!/([#&?])brand=/.test(url.hash)) url.hash = want;
         a.setAttribute("href", url.toString());
       }
     } catch {}
   }, true);
+
+  // ---------- filtro de menu (apenas Visão Geral na fase 1) ----------
+  function filterVisaoGeralInNav(brand) {
+    const want = suffixForBrand(brand);
+    if (!want) return;
+    const links = document.querySelectorAll(".md-nav a[href]");
+    links.forEach(a => {
+      const href = a.getAttribute("href") || "";
+      if (!isVisaoGeralPath(href)) return;          // só lida com Visão Geral
+      const has = hrefHasBrandSuffix(href);
+      const matches = has ? href.includes(want) : true; // se não tem sufixo, não esconde
+      const li = a.closest("li") || a.parentElement;
+      if (li) li.style.display = matches ? "" : "none";
+    });
+  }
+
+  // ---------- redireciona se está na versão errada de Visão Geral ----------
+  function redirectIfWrongVisaoGeral(brand) {
+    const want = suffixForBrand(brand);
+    if (!want) return;
+
+    const path = location.pathname;
+    if (!isVisaoGeralPath(path)) return; // só ativa na rota de Visão Geral
+
+    const hasAny = hrefHasBrandSuffix(path);
+    if (!hasAny) {
+      // sem sufixo: injeta o desejado
+      const url = new URL(location.href);
+      url.pathname = path.replace(RE_VISAO, (m) => m + "__brand-target").replace("__brand-target", want);
+      history.replaceState(null, "", url.toString());
+      location.reload();
+      return;
+    }
+    // com sufixo errado: troca
+    if (!path.includes(want)) {
+      const url = new URL(location.href);
+      let p = path;
+      ALL_SUFFIXES.forEach(s => { p = p.replace(s, want); });
+      url.pathname = p;
+      history.replaceState(null, "", url.toString());
+      location.reload();
+    }
+  }
 
   // ---------- aplicação com trava + debounce ----------
   let applying = false;
@@ -158,7 +246,7 @@
 
       setChrome(full);
 
-      // apenas áreas relevantes (evita varrer o doc todo)
+      // apenas áreas relevantes
       const content = document.querySelector(".md-content");
       if (content) replaceTextNodes(content, full);
 
@@ -174,9 +262,13 @@
         `);
       }
 
-      // mantém hash e links
+      // preserva hash e corrige links internos
       decorateInternalLinks(document);
       ensureHashInUrl();
+
+      // ---- FASE 1: aplicar lógica só para Visão Geral ----
+      filterVisaoGeralInNav(params.brand);
+      redirectIfWrongVisaoGeral(params.brand);
 
       LOG("aplicado →", full, params.brandColor || "(sem cor)");
     } catch (e) {
