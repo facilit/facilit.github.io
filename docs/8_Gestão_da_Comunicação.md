@@ -1,4 +1,4 @@
-# 8. Gestão da Comunicação
+# Gestão da Comunicação
 
 <img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/68bafc78-8a6d-4181-9e6b-b966e3cd28c7" />
 
