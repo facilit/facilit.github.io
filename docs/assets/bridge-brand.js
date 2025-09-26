@@ -22,9 +22,9 @@
   // color: cor default (pode ser sobrescrita via #brandColor=...)
   const BRANDS = {
     target:      { display: "Target",       fileSuffix: "__brand-target",      color: "#0a6cff" },
-    serprovisao: { display: "Serpro Visão", fileSuffix: "__brand-serpro",      color: "#1b998b" },
-    whitelabel:  { display: "",             fileSuffix: "__brand-whitelabel",  color: "#447"     },
-    planejar:    { display: "Planejar",     fileSuffix: "__brand-planejar",    color: "#2a74d9" }
+    serprovisao: { display: "Serpro Visão", fileSuffix: "__brand-serpro",      color: "#00A0E2" },
+    whitelabel:  { display: "",             fileSuffix: "__brand-whitelabel",  color: "#0a6cff" },
+    planejar:    { display: "Planejar",     fileSuffix: "__brand-planejar",    color: "#820E64" }
   };
 
   // — helper: obtém config do brand atual (com fallback)
