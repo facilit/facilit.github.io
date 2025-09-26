@@ -1,79 +1,112 @@
 (function () {
   const BASE = "Plataforma";
 
-  function log(){ try{ console.log("[bridge-brand]", ...arguments); }catch{} }
+  const log = (...a) => { try { console.log("[bridge-brand]", ...a); } catch {} };
 
-  function escapeRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  // --- helpers ---
+  const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  const getParams = () => {
+    // prioridade para HASH (#brand=...&brandColor=...), fallback para QUERY (?brand=...)
+    const h = new URLSearchParams(location.hash.replace(/^#/, ""));
+    const q = new URLSearchParams(location.search);
+    const pick = (k) => h.get(k) ?? q.get(k);
+    const brandRaw = pick("brand");
+    const colorRaw = pick("brandColor");
+    const noBrand  = (pick("noBrand") || "") === "1";
+    return {
+      brand: brandRaw ? decodeURIComponent(brandRaw) : "",
+      brandColor: colorRaw ? decodeURIComponent(colorRaw) : "",
+      noBrand
+    };
+  };
 
   function replaceTextNodes(root, full) {
-    // substitui a palavra isolada "Plataforma" sem duplicar o sufixo
-    const suf = full.split(' ').slice(1).join(' ');
-    const re  = new RegExp(`\\b${BASE}\\b(?!\\s+${escapeRe(suf)})`, 'g');
-    const skip = new Set(["PRE","CODE","KBD","SAMP","SCRIPT","STYLE"]);
+    if (!root || !full) return;
+    const suf = full.split(" ").slice(1).join(" ");
+    const re  = new RegExp(`\\b${BASE}\\b(?!\\s+${escapeRe(suf)})`, "g");
+
+    const SKIP = new Set(["PRE","CODE","KBD","SAMP","SCRIPT","STYLE","NOSCRIPT"]);
     const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode(n){
-        if (!n.nodeValue || !n.nodeValue.includes(BASE)) return NodeFilter.FILTER_REJECT;
-        for (let p=n.parentNode; p; p=p.parentNode) if (skip.has(p.nodeName)) return NodeFilter.FILTER_REJECT;
+        if (!n.nodeValue || n.nodeValue.indexOf(BASE) === -1) return NodeFilter.FILTER_REJECT;
+        for (let p=n.parentNode; p; p=p.parentNode) if (SKIP.has(p.nodeName)) return NodeFilter.FILTER_REJECT;
         return NodeFilter.FILTER_ACCEPT;
       }
     });
-    const nodes = [];
-    while (w.nextNode()) nodes.push(w.currentNode);
-    nodes.forEach(n => n.nodeValue = n.nodeValue.replace(re, full));
+    const nodes=[]; while (w.nextNode()) nodes.push(w.currentNode);
+    nodes.forEach(n => { try { n.nodeValue = n.nodeValue.replace(re, full); } catch {} });
   }
 
   function setChrome(full){
-    // header / brand
-    document.querySelectorAll('.md-header__title .md-ellipsis,[data-md-component="header-title"] .md-ellipsis')
-      .forEach(el => el.textContent = full);
-    // título do site na sidebar
-    document.querySelectorAll('.md-nav__title .md-ellipsis,[data-md-component="sidebar"] .md-nav__title')
-      .forEach(el => el.textContent = full);
-    // <title>
-    const parts = document.title.split(' - ');
-    document.title = (parts.length>=2) ? [...parts.slice(0,-1), full].join(' - ') : full;
-    // acessibilidade
-    const logo = document.querySelector('.md-header__button.md-logo');
-    if (logo) logo.setAttribute('aria-label', full);
+    try {
+      document
+        .querySelectorAll('.md-header__title .md-ellipsis,[data-md-component="header-title"] .md-ellipsis')
+        .forEach(el => el.textContent = full);
+      document
+        .querySelectorAll('.md-nav__title .md-ellipsis,[data-md-component="sidebar"] .md-nav__title')
+        .forEach(el => el.textContent = full);
+      const parts = document.title.split(" - ");
+      document.title = (parts.length>=2) ? [...parts.slice(0,-1), full].join(" - ") : full;
+      const logo = document.querySelector(".md-header__button.md-logo");
+      if (logo) logo.setAttribute("aria-label", full);
+    } catch (e) { log("setChrome err:", e.message); }
   }
 
   function injectCss(css){
     if (!css) return;
-    const s = document.createElement('style');
-    s.setAttribute('data-brand', 'true');
-    s.textContent = css;
-    document.head.appendChild(s);
+    try {
+      const s = document.createElement("style");
+      s.setAttribute("data-brand", "true");
+      s.textContent = css;
+      document.head.appendChild(s);
+    } catch (e) { log("injectCss err:", e.message); }
   }
 
-  function applyBrand(brand, color){
+  function applyBrand({ brand, brandColor }){
     const full = brand ? `${BASE} ${brand}` : BASE;
     setChrome(full);
     // conteúdo + menus + toc + footer
-    const content = document.querySelector('.md-content'); if (content) replaceTextNodes(content, full);
-    document.querySelectorAll('.md-sidebar,.md-nav,[data-md-component="toc"],footer')
-      .forEach(n => replaceTextNodes(n, full));
+    try {
+      const content = document.querySelector(".md-content");
+      if (content) replaceTextNodes(content, full);
+      document
+        .querySelectorAll(".md-sidebar,.md-nav,[data-md-component='toc'],footer")
+        .forEach(n => replaceTextNodes(n, full));
+    } catch (e) { log("replaceTextNodes err:", e.message); }
 
-    if (color) {
-      // cor do header + realces básicos
+    if (brandColor) {
       injectCss(`
-        header.md-header.md-header--shadow { background-color: ${color} !important; }
-        .md-nav__link--active { border-left: 3px solid ${color}; }
-        :root { --brand-color: ${color}; }
+        header.md-header.md-header--shadow { background-color:${brandColor} !important; }
+        .md-nav__link--active { border-left:3px solid ${brandColor}; }
+        :root { --brand-color:${brandColor}; }
       `);
     }
-    log("applyBrand OK →", full, color || '(sem cor)');
+    log("aplicado →", full, brandColor||"(sem cor)");
   }
 
-  // Ler parâmetros da URL
-  const qs = new URLSearchParams(location.search);
-  const brand      = qs.get('brand') ? decodeURIComponent(qs.get('brand')) : '';
-  const brandColor = qs.get('brandColor'); // ex.: %230a6cff
+  // --- boot (com tolerância) ---
+  const params = getParams();
+  if (params.noBrand) { log("noBrand=1, ignorando"); return; }
 
-  if (brand || brandColor) applyBrand(brand, brandColor);
+  log("carregado; params=", params);
 
-  // Reaplica em navegação SPA
-  const obs = new MutationObserver(() => { if (brand || brandColor) applyBrand(brand, brandColor); });
-  obs.observe(document.documentElement, { childList:true, subtree:true });
+  // espere alguns frames para o Material montar o DOM
+  let tries = 0;
+  const start = () => {
+    try {
+      applyBrand(params);
+    } catch (e) { log("apply err:", e.message); }
+    // reobserve SPA updates
+    const mo = new MutationObserver(() => applyBrand(params));
+    mo.observe(document.documentElement, { childList:true, subtree:true });
+  };
 
-  log("bridge-brand.js carregado; brand=", brand, "color=", brandColor);
+  const waitDom = () => {
+    const ready = document.querySelector(".md-content");
+    if (ready || tries >= 20) return start();
+    tries++;
+    requestAnimationFrame(waitDom);
+  };
+  waitDom();
 })();
