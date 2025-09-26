@@ -9,7 +9,7 @@ Seja bem-vindo e aproveite ao máximo sua jornada de aprendizado e descoberta na
 
 Para começar, selecione algum tópico no menu à esquerda.
 
-!!! info "Sobre" Este espaço é mais do que uma simples fonte de informações - é uma comunidade onde compartilhamos conhecimento, experiências e insights para melhor atendê-lo. Valorizamos seu feedback e estamos sempre abertos a sugestões e comentários para aprimorar ainda mais nossa base de conhecimento e garantir sua satisfação contínua.
+<p style="text-align: justify;">!!! info "Sobre" Este espaço é mais do que uma simples fonte de informações - é uma comunidade onde compartilhamos conhecimento, experiências e insights para melhor atendê-lo. Valorizamos seu feedback e estamos sempre abertos a sugestões e comentários para aprimorar ainda mais nossa base de conhecimento e garantir sua satisfação contínua.</p>
 
 
 Entre em contato:
