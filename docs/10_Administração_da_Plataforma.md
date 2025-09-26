@@ -1,4 +1,4 @@
-# 10. Administração da Plataforma
+# Administração da Plataforma
 
 Nossa plataforma é altamente parametrizável, e o Administrador da Plataforma possui grande poder para configurar essas parametrizações.
 
