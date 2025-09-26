@@ -1,4 +1,4 @@
-# Bem-vindo a documentação do Plataforma
+# Bem-vindo a documentação da Plataforma
 
 ![](assets/d7c08a54-64af-4421-91f0-562974d797e6.png)
 
