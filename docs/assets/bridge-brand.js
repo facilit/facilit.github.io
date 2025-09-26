@@ -1,44 +1,54 @@
 (function () {
-  // --- util: troca "Plataforma" -> "Plataforma {suffix}" em pontos do tema e em textos gerais
-  function applyBranding(suffix) {
-    const base = "Plataforma";
-    const full = suffix ? `${base} ${suffix}` : base;
+  const BASE = "Plataforma";
 
-    // 1) pontos de brand do Material for MkDocs
-    const headerEl = document.querySelector(".md-header__title .md-ellipsis") || document.querySelector(".md-header .md-ellipsis");
-    if (headerEl) headerEl.textContent = full;
+  function replaceTextNodes(root, full) {
+    // varre apenas nós de TEXTO, sem mexer em atributos/links
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+    const re = new RegExp(`\\b${BASE}\\b`, 'g'); // palavra exata
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(n => {
+      if (re.test(n.nodeValue)) n.nodeValue = n.nodeValue.replace(re, full);
+    });
+  }
 
-    const sideEl = document.querySelector(".md-nav__title .md-ellipsis") || document.querySelector(".md-sidebar__inner .md-ellipsis");
-    if (sideEl) sideEl.textContent = full;
+  function setBrandingOnChrome(full) {
+    // header
+    document.querySelectorAll('.md-header__title .md-ellipsis, [data-md-component="header-title"] .md-ellipsis')
+      .forEach(el => el.textContent = full);
 
-    // 2) <title> (preserva título da página)
-    const parts = document.title.split(" - ");
+    // título do site na sidebar (topo)
+    document.querySelectorAll('.md-nav__title .md-ellipsis, [data-md-component="sidebar"] .md-nav__title')
+      .forEach(el => el.textContent = full);
+
+    // <title> da aba (mantém prefixos)
+    const parts = document.title.split(' - ');
     if (parts.length >= 2) {
       parts[parts.length - 1] = full;
-      document.title = parts.join(" - ");
+      document.title = parts.join(' - ');
     } else {
       document.title = full;
     }
 
-    // 3) acessibilidade
-    const logoBtn = document.querySelector(".md-header__button.md-logo");
-    if (logoBtn) logoBtn.setAttribute("aria-label", full);
-
-    // 4) (Opcional) substituir ocorrências soltas no conteúdo
-    //    Descomente se quiser forçar em textos também:
-    /*
-    function replaceText(node) {
-      if (node.nodeType === 3 && node.nodeValue.includes(base)) {
-        node.nodeValue = node.nodeValue.replaceAll(base, full);
-      } else {
-        node.childNodes.forEach(replaceText);
-      }
-    }
-    replaceText(document.body);
-    */
+    // acessibilidade
+    const logoBtn = document.querySelector('.md-header__button.md-logo');
+    if (logoBtn) logoBtn.setAttribute('aria-label', full);
   }
 
-  // --- util: injeta CSS arbitrário no <head>
+  function applyBrand(suffix) {
+    const full = suffix ? `${BASE} ${suffix}` : BASE;
+
+    // pontos de UI fixos
+    setBrandingOnChrome(full);
+
+    // *** troca também no MENU e CONTEÚDO ***
+    const content = document.querySelector('.md-content');
+    if (content) replaceTextNodes(content, full);
+
+    const sidebar = document.querySelector('.md-sidebar');
+    if (sidebar) replaceTextNodes(sidebar, full);
+  }
+
   function injectCss(cssText) {
     if (!cssText) return;
     const s = document.createElement('style');
@@ -47,25 +57,23 @@
     document.head.appendChild(s);
   }
 
-  // --- aplica se vier via query (?brand=...)
+  // 1) aplica por querystring
   const params = new URLSearchParams(location.search);
-  const brandQS = params.get('brand');
-  if (brandQS) {
-    applyBranding(decodeURIComponent(brandQS));
-  }
+  let currentSuffix = params.get('brand') ? decodeURIComponent(params.get('brand')) : '';
 
-  // Para navegação estilo SPA do Material, re-aplica quando mudar DOM
-  const obs = new MutationObserver(() => {
-    if (brandQS) applyBranding(decodeURIComponent(brandQS));
-  });
+  if (currentSuffix) applyBrand(currentSuffix);
+
+  // 2) re-aplica ao trocar de página (SPA do Material)
+  const reapply = () => { if (currentSuffix) applyBrand(currentSuffix); };
+  const obs = new MutationObserver(reapply);
   obs.observe(document.documentElement, { childList: true, subtree: true });
 
-  // --- ponte de mensagens vindas do parent
+  // 3) ponte postMessage
   const ALLOWED_ORIGINS = [
-    'https://plataformatarget.com.br',
     'https://facilit.plataformatarget.com.br',
-    'https://facilit.github.io'
-    // adicione domínios do Target que vão embutir seu MkDocs
+    'https://prprodutivo-homologacao.planejar.pr.gov.br',
+    'http://localhost:8080',
+    'https://facilit.github.io' // deixe enquanto testa
   ];
 
   window.addEventListener('message', (event) => {
@@ -74,13 +82,14 @@
     if (source !== 'parent') return;
 
     if (action === 'setBrand') {
-      applyBranding(payload && payload.suffix);
+      currentSuffix = payload?.suffix || '';
+      applyBrand(currentSuffix);
     }
     if (action === 'injectCSS') {
-      injectCss(payload && payload.css);
+      injectCss(payload?.css);
     }
     if (action === 'scrollTo') {
-      const hash = payload && payload.hash;
+      const hash = payload?.hash;
       if (hash) {
         if (location.hash !== hash) location.hash = hash;
         const el = document.querySelector(hash);
