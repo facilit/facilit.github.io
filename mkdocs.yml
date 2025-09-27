@@ -11,6 +11,10 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - assets/bridge-brand.js?v=13
+  
+extra:
+  generator: false   # 🔹 remove a barra "Made with Material for MkDocs"
+  
 markdown_extensions:
   - admonition
   - pymdownx.details
