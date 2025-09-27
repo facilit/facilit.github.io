@@ -4,6 +4,7 @@
 
 <p style="text-align: justify;">
   <strong>Bem-vindo à nossa base de conhecimento!</strong><br>
+  
   Aqui você encontra <strong>respostas rápidas</strong>, <strong>orientações práticas</strong> e conteúdos pensados para ajudar no dia a dia com a Plataforma. 
   Seja para tirar dúvidas sobre o funcionamento, configurar recursos ou explorar novas possibilidades, este espaço foi criado para apoiar você em cada passo.
 </p>
