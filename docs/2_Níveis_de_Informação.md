@@ -21,15 +21,25 @@ Exemplo prático de estrutura
 Vamos considerar um objetivo de alto nível: "Reformar escolas". Abaixo dele, poderão ser adicionados projetos, etapas, atividades, tarefas e subtarefas. Veja como essa estrutura pode ser montada:
 - N1: Reformar escolas (Objetivo)
    - N2: Escola Ribeiro Dias (Projeto)
+     
     - N3: Planejamento (Etapa)
+      
      - N4: Desenho nova planta (Atividade)
+       
       - N5: Contatar equipe técnica (Tarefa)
+  
       - N5: Criação do projeto (Tarefa)
+  
         - N6: Preparação do material (Subtarefa)
+  
         - N6: Apresentação do projeto (Subtarefa)
+  
     - N4: Visita técnica (Atividade)
+      
     - N4: Previsão orçamentária (Atividade)
+      
       - N5: Aprovação do orçamento (Tarefa)
+        
       - N5: Liberação da verba (Tarefa)
 
 ## Benefícios dos Níveis de Informação
@@ -46,4 +56,5 @@ Para aprender a criar suas entidades na prática, confira o próximo artigo ou a
 
 ### Artigos Relacionados
 [Criação dos Níveis](docs/2.1_Criação_dos_Níveis_(N1,_N2,_N3,_N4,_N5_e_N6).md)
+
 [Editar e Romever Entidades](docs/2.2_Como_Editar_e_Remover_Entidades.md)
