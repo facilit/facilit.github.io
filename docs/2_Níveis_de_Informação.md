@@ -23,13 +23,13 @@ Vamos considerar um objetivo de alto nível: "Reformar escolas". Abaixo dele, po
 - - N2: Escola Ribeiro Dias (Projeto)
   - N3: Planejamento (Etapa)
   - - N4: Desenho nova planta (Atividade)
-    - - N5: Contatar equipe técnica (Tarefa)
+      - N5: Contatar equipe técnica (Tarefa)
       - N5: Criação do projeto (Tarefa)
-      - - N6: Preparação do material (Subtarefa)
+        - N6: Preparação do material (Subtarefa)
         - N6: Apresentação do projeto (Subtarefa)
     - N4: Visita técnica (Atividade)
     - N4: Previsão orçamentária (Atividade)
-    - - N5: Aprovação do orçamento (Tarefa)
+      - N5: Aprovação do orçamento (Tarefa)
       - N5: Liberação da verba (Tarefa)
 
 ## Benefícios dos Níveis de Informação
@@ -43,3 +43,7 @@ Vamos considerar um objetivo de alto nível: "Reformar escolas". Abaixo dele, po
 Os Níveis de Informação permitem que a estruturação de projetos no Target seja feita de forma visual, intuitiva e altamente funcional. Além disso, a nomenclatura dos níveis é totalmente customizável, possibilitando adaptação a qualquer realidade organizacional.
 Com isso, o gestor consegue transformar estratégia em ações concretas, acompanhar o desempenho em cada etapa e tomar decisões com base em informações bem estruturadas.
 Para aprender a criar suas entidades na prática, confira o próximo artigo ou assista ao nosso tutorial em vídeo.
+
+### Artigos Relacionados
+[Criação dos Níveis](docs/2.1_Criação_dos_Níveis_(N1,_N2,_N3,_N4,_N5_e_N6).md)
+[Editar e Romever Entidades](docs/2.2_Como_Editar_e_Remover_Entidades.md)
