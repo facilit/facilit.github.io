@@ -10,22 +10,36 @@
   </iframe>
 </div>
 
+# Introdução
+Na Plataforma, os Níveis de Informação organizam o planejamento estratégico em diferentes camadas, facilitando o acompanhamento das metas, a divisão de responsabilidades e a execução de projetos. Essa estrutura é baseada em um modelo hierárquico conhecido como EAP (Estrutura Analítica de Projeto), permitindo o desdobramento do objetivo principal em ações mais detalhadas.
 
-Níveis de Informação
+## O que são os Níveis de Informação?
+A Plataforma é um sistema online e altamente personalizável, que permite ao gestor criar estruturas organizadas e adaptadas às necessidades da sua instituição. Os Níveis de Informação representam a forma como as ações são hierarquicamente organizadas dentro do sistema, facilitando o planejamento, a visualização e o monitoramento das atividades.
+Cada item dentro dessa estrutura é chamado de entidade, e pode representar desde um objetivo amplo até uma subtarefa específica. O gestor decide até que ponto deseja detalhar suas ações, de acordo com a complexidade do projeto.
 
-A ferramenta é estruturada em camadas e nessas camadas vamos destrinchando os elementos;
+Exemplo prático de estrutura
+Vamos considerar um objetivo de alto nível: "Reformar escolas". Abaixo dele, poderão ser adicionados projetos, etapas, atividades, tarefas e subtarefas. Veja como essa estrutura pode ser montada:
+- N1: Reformar escolas (Objetivo)
+- - N2: Escola Ribeiro Dias (Projeto)
+  - N3: Planejamento (Etapa)
+  - - N4: Desenho nova planta (Atividade)
+    - - N5: Contatar equipe técnica (Tarefa)
+      - N5: Criação do projeto (Tarefa)
+      - - N6: Preparação do material (Subtarefa)
+        - N6: Apresentação do projeto (Subtarefa)
+    - N4: Visita técnica (Atividade)
+    - N4: Previsão orçamentária (Atividade)
+    - - N5: Aprovação do orçamento (Tarefa)
+      - N5: Liberação da verba (Tarefa)
 
-Na estratégia da empresa o nosso ponto principal é o objetivo estratégico.
+## Benefícios dos Níveis de Informação
+- Estrutura clara e organizada para os projetos
+- Visão sistêmica e detalhada das ações
+- Fácil atribuição de responsabilidades
+- Monitoramento eficiente por etapa ou atividade
+- Flexibilidade para personalizar conforme a realidade da instituição
 
-O objetivo estratégico por si só é uma entidade muito grande para o gestor executar qualquer ação e conceber um resultado específico pra ele;
-
-Como solução, o objetivo estratégico é dividido em projetos menores em um modelo de árvore binária.
-
-A nomenclatura dos níveis de informação é totalmente personalizável.
-
-O segundo nível de informação que é o nível de projeto a atuação é mais forte;
-
-Executando os projetos importantes para atingir os objetivos que a empresa está traçando alimentando as informações na ferramenta;
-
-Esses projetos podem ser divididos em etapas e tarefas onde podemos seguir até um sexto nível de informação;
-
+## Observações finais
+Os Níveis de Informação permitem que a estruturação de projetos no Target seja feita de forma visual, intuitiva e altamente funcional. Além disso, a nomenclatura dos níveis é totalmente customizável, possibilitando adaptação a qualquer realidade organizacional.
+Com isso, o gestor consegue transformar estratégia em ações concretas, acompanhar o desempenho em cada etapa e tomar decisões com base em informações bem estruturadas.
+Para aprender a criar suas entidades na prática, confira o próximo artigo ou assista ao nosso tutorial em vídeo.
