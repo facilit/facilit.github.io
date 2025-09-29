@@ -19,7 +19,9 @@ Cada item dentro dessa estrutura é chamado de entidade, e pode representar desd
 
 Exemplo prático de estrutura
 Vamos considerar um objetivo de alto nível: "Reformar escolas". Abaixo dele, poderão ser adicionados projetos, etapas, atividades, tarefas e subtarefas. Veja como essa estrutura pode ser montada:
+
 - N1: Reformar escolas (Objetivo)
+  
    - N2: Escola Ribeiro Dias (Projeto)
      
     - N3: Planejamento (Etapa)
