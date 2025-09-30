@@ -8,8 +8,6 @@ theme:
   logo:
     assets/logo_branca.png
   features:
-    - navigation.tabs          # abas no topo para os níveis 1
-    - navigation.tabs.sticky   # abas “grudam” no topo
     - navigation.sections      # dobra/expande seções na sidebar
     - navigation.indexes       # rótulo da seção vira link para index.md
     - navigation.instant       # transições rápidas
