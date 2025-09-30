@@ -7,14 +7,6 @@ theme:
   language: pt-BR
   logo:
     assets/logo_branca.png
-  features:
-    - navigation.sections      # dobra/expande seções na sidebar
-    - navigation.indexes       # rótulo da seção vira link para index.md
-    - navigation.instant       # transições rápidas
-    - navigation.tracking      # sincroniza URL ao rolar
-    - navigation.top           # “voltar ao topo”
-    - toc.integrate            # TOC integrado na sidebar
-    - header.autohide          # cabeçalho esconde ao rolar
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
