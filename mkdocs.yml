@@ -7,6 +7,8 @@ theme:
   language: pt-BR
   logo:
     assets/logo_branca.png
+  features:
+    - navigation.path
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
