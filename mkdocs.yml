@@ -8,8 +8,15 @@ theme:
   logo:
     assets/logo_branca.png
   features:
-    - navigation.path
-    - navigation.top
+    - navigation.tabs          # abas no topo para os níveis 1
+    - navigation.tabs.sticky   # abas “grudam” no topo
+    - navigation.sections      # dobra/expande seções na sidebar
+    - navigation.indexes       # rótulo da seção vira link para index.md
+    - navigation.instant       # transições rápidas
+    - navigation.tracking      # sincroniza URL ao rolar
+    - navigation.top           # “voltar ao topo”
+    - toc.integrate            # TOC integrado na sidebar
+    - header.autohide          # cabeçalho esconde ao rolar
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
