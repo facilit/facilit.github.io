@@ -22,6 +22,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+nav:
   - Visão Geral:
     - Visão Geral: 1.Visão_Geral__brand-target.md
     - Visão Geral: 1.Visão_Geral__brand-serpro.md
