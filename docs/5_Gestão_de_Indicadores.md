@@ -2,6 +2,8 @@
 
 A gestão de indicadores é uma prática essencial para qualquer instituição pública comprometida com resultados concretos, transparência e eficiência. Por meio dela, é possível transformar informações dispersas em dados estratégicos, facilitando a tomada de decisão e o acompanhamento real do que está sendo entregue à população.
 
+<img width="1909" height="846" alt="image" src="https://github.com/user-attachments/assets/ae3b6ce8-cb5d-42cb-8736-e0cd8705d7f0" />
+
 ---
 
 ## Por que os indicadores são tão importantes?
