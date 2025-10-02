@@ -1,6 +1,6 @@
 # A importância da Gestão de Indicadores no Acompanhamento de Projetos
 
-A gestão de indicadores é uma prática essencial para qualquer instituição pública comprometida com resultados concretos, transparência e eficiência. Por meio dela, é possível transformar informações dispersas em dados estratégicos, facilitando a tomada de decisão e o acompanhamento real do que está sendo entregue à população.
+<p style="text-align: justify;">A gestão de indicadores é uma prática essencial para qualquer instituição pública comprometida com resultados concretos, transparência e eficiência. Por meio dela, é possível transformar informações dispersas em dados estratégicos, facilitando a tomada de decisão e o acompanhamento real do que está sendo entregue à população.</p>
 
 <img width="1909" height="846" alt="image" src="https://github.com/user-attachments/assets/ae3b6ce8-cb5d-42cb-8736-e0cd8705d7f0" />
 
@@ -8,7 +8,7 @@ A gestão de indicadores é uma prática essencial para qualquer instituição p
 
 ## Por que os indicadores são tão importantes?
 
-Imagine um projeto de reforma de escolas em andamento. Sem indicadores, o gestor teria que confiar apenas em percepções subjetivas ou relatórios desatualizados para saber se está tudo correndo bem. Já com indicadores definidos — como o percentual de conclusão das obras, o número de escolas entregues ou o tempo médio para finalização — o acompanhamento se torna objetivo, visual e baseado em evidências.
+<p style="text-align: justify;">Imagine um projeto de reforma de escolas em andamento. Sem indicadores, o gestor teria que confiar apenas em percepções subjetivas ou relatórios desatualizados para saber se está tudo correndo bem. Já com indicadores definidos — como o percentual de conclusão das obras, o número de escolas entregues ou o tempo médio para finalização — o acompanhamento se torna objetivo, visual e baseado em evidências.</p>
 
 Indicadores bem definidos permitem:
 
@@ -22,7 +22,7 @@ Indicadores bem definidos permitem:
 
 ## Indicadores e Entidades: o elo entre estratégia e execução
 
-Na Plataforma Target, cada projeto, etapa ou ação é representado por uma **entidade**. Ao associar indicadores a essas entidades, o gestor passa a enxergar o desempenho de cada item planejado com mais precisão.
+<p style="text-align: justify;">Na Plataforma Target, cada projeto, etapa ou ação é representado por uma **entidade**. Ao associar indicadores a essas entidades, o gestor passa a enxergar o desempenho de cada item planejado com mais precisão.</p>
 
 Por exemplo:
 
@@ -54,7 +54,7 @@ Além disso, indicadores claros ajudam a promover uma cultura de resultado nas s
 
 ## Conclusão
 
-A gestão de indicadores não é apenas uma ferramenta de controle — ela é uma ponte entre o planejamento e a realidade. Utilizar indicadores vinculados às entidades na Plataforma Target permite que os gestores públicos acompanhem o progresso de suas ações com clareza, promovam melhorias contínuas e entreguem serviços mais eficazes à sociedade.
+<p style="text-align: justify;">A gestão de indicadores não é apenas uma ferramenta de controle — ela é uma ponte entre o planejamento e a realidade. Utilizar indicadores vinculados às entidades na Plataforma Target permite que os gestores públicos acompanhem o progresso de suas ações com clareza, promovam melhorias contínuas e entreguem serviços mais eficazes à sociedade.</p>
 
 Transforme seus projetos em resultados visíveis. Use indicadores para liderar com inteligência, responsabilidade e foco no cidadão.
 
