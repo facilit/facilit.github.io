@@ -51,9 +51,10 @@ A funcionalidade de **Reuniões e Encaminhamentos** da Plataforma Target é um r
 
 ---
 
-## Tela de exemplo da funcionalidade
+**Ata de Reunião**
 
-> **Inserir aqui um print da tela do módulo de reuniões/encaminhamentos na plataforma Target**
+<img width="1920" height="2558" alt="image" src="https://github.com/user-attachments/assets/8f0d4a37-9115-4b45-91f3-0ced32aacc4e" />
+
 
 ---
 
@@ -64,7 +65,5 @@ O módulo de Reuniões e Encaminhamentos é uma ferramenta estratégica que prom
 > Reunião bem feita é aquela que termina com encaminhamentos claros, prazos definidos e responsabilidades atribuídas.
 
 ---
-
-**Tags sugeridas:** reuniões, encaminhamentos, apresentação de projetos, monitoramento, status report, plataforma target, gestor público
 
 
