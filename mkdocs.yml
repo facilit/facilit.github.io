@@ -79,10 +79,7 @@ nav:
     - Bloco Agrupado: 3.16_Bloco_Agrupado.md
     - Linha de Base: 3.17_Linha_de_base.md
     - Gráfico de evolução do Projeto: 3.18_Gráfico_de_evolução_do_Projeto.md
-  - Campos Dinâmicos:
-    - Campos Dinâmicos: 3.19_Campos_Dinâmicos.md
-    - Publicador de Campos Dinâmico: 3.19.1_Publicador_de_Campos_Dinâmico.md
-    - Gestão de Indicadores:
+  - Gestão de Indicadores:
       - Gestão de Indicadores: 5_Gestão_de_Indicadores.md
       - Gerenciador de Indicadores: 5.1_Gerenciador_de_Indicadores.md
       - Matriz de Indicadores: 5.2_Matriz_de_Indicadores.md
@@ -90,6 +87,9 @@ nav:
       - Análise de Desempenho do Indicador: 5.5_Análise_de_Desempenho_do_Indicador.md
       - Método de cálculo e polaridade: 5.7_Método_de_cálculo_e_polaridade.md
       - Indicadores Simples: 5.8_Indicadores_Simples.md
+  - Campos Dinâmicos:
+    - Campos Dinâmicos: 3.19_Campos_Dinâmicos.md
+    - Publicador de Campos Dinâmico: 3.19.1_Publicador_de_Campos_Dinâmico.md
   - Reuniões, Apresentações e Encaminhamentos:
     - Reuniões, Apresentações e Encaminhamentos: 6_Reuniões,_Apresentações_e_Encaminhamentos.md
     - Apresentações: 6.1_Apresentações.md
