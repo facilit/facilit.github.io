@@ -1,5 +1,5 @@
 
-A funcionalidade de **Reuniões e Encaminhamentos** da Plataforma Target é um recurso essencial para garantir o acompanhamento efetivo das ações, promover o engajamento das equipes e consolidar a cultura de monitoramento na gestão pública. Ao centralizar decisões e facilitar o registro de encaminhamentos, ela transforma as reuniões em um poderoso motor de avanço das entregas.
+A funcionalidade de **Reuniões e Encaminhamentos** da Plataforma é um recurso essencial para garantir o acompanhamento efetivo das ações, promover o engajamento das equipes e consolidar a cultura de monitoramento na gestão pública. Ao centralizar decisões e facilitar o registro de encaminhamentos, ela transforma as reuniões em um poderoso motor de avanço das entregas.
 
 > **Importante:** A realização sistemática de reuniões de monitoramento é uma prática chave para evitar atrasos, identificar gargalos e reforçar o compromisso dos responsáveis com os projetos em andamento.
 
