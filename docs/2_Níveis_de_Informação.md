@@ -52,7 +52,7 @@ Vamos considerar um objetivo de alto nível: "Reformar escolas". Abaixo dele, po
 - Flexibilidade para personalizar conforme a realidade da instituição
 
 ## Observações finais
-Os Níveis de Informação permitem que a estruturação de projetos no Target seja feita de forma visual, intuitiva e altamente funcional. Além disso, a nomenclatura dos níveis é totalmente customizável, possibilitando adaptação a qualquer realidade organizacional.
+Os Níveis de Informação permitem que a estruturação de projetos na Plataforma seja feita de forma visual, intuitiva e altamente funcional. Além disso, a nomenclatura dos níveis é totalmente customizável, possibilitando adaptação a qualquer realidade organizacional.
 Com isso, o gestor consegue transformar estratégia em ações concretas, acompanhar o desempenho em cada etapa e tomar decisões com base em informações bem estruturadas.
 Para aprender a criar suas entidades na prática, confira o próximo artigo ou assista ao nosso tutorial em vídeo.
 
