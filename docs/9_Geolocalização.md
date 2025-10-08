@@ -17,12 +17,12 @@ Ao salvar, o ponto estará marcado no mapa com a opção de exibir numa galeria 
 
 Já no Grupo de Marcadores que está no lado direito da tela será exibida a lista de pontos salvos com opções para localizar o item no mapa permitindo centralizar o ponto no meio da tela, a edição dos dados do ponto e a opção de apagar o ponto.
 
-KML é um formato de arquivo usado para exibir dados geográficos como pontos, mapas, áreas, etc. Esse tipo arquivo pode ser gerado pelo Google Earth, Google Maps, Photoshop, Autocad dentre vários softwares. A Plataforma Target suporta a importação de arquivos KML com as áreas ou pontos previamentes marcados.  
+KML é um formato de arquivo usado para exibir dados geográficos como pontos, mapas, áreas, etc. Esse tipo arquivo pode ser gerado pelo Google Earth, Google Maps, Photoshop, Autocad dentre vários softwares. A Plataforma suporta a importação de arquivos KML com as áreas ou pontos previamentes marcados.  
 Ao clicar no botão Importar KML é exibida a tela de configuração para importação o arquivo KML. Clicamos no botão selecionar arquivo definimos um nome e clicamos no botão importar KML. Ele transfere para a plataforma os dados do arquivo e imprime no mapa as marcações existentes.
 
-Na opção Gerenciar Pontos é possível adicionar um ponto no mapa digitando o nome e as informações de latitude e longitude diretamente na Plataforma Target ou ainda modificar um ponto marcado anteriormente.
+Na opção Gerenciar Pontos é possível adicionar um ponto no mapa digitando o nome e as informações de latitude e longitude diretamente na Plataforma ou ainda modificar um ponto marcado anteriormente.
 
-Já na opção Gerenciar Regiões podemos marcar regiões previamente cadastradas no Target a pedido do cliente, como bairros, cidades ou regiões mais específicas.  
+Já na opção Gerenciar Regiões podemos marcar regiões previamente cadastradas na Plataforma a pedido do cliente, como bairros, cidades ou regiões mais específicas.  
 Neste campo localizamos a área pré-cadastrada e ao clicar no resultado a área será desenhada no mapa.
 
 Em Gerenciar Ícones é possível inserir uma imagem personalizada como ícone nas marcações dos pontos.
