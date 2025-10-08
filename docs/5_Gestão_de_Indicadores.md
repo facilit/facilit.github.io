@@ -22,7 +22,7 @@ Indicadores bem definidos permitem:
 
 ## Indicadores e Entidades: o elo entre estratégia e execução
 
-<p style="text-align: justify;">Na Plataforma Target, cada projeto, etapa ou ação é representado por uma **entidade**. Ao associar indicadores a essas entidades, o gestor passa a enxergar o desempenho de cada item planejado com mais precisão.</p>
+<p style="text-align: justify;">Na Plataforma, cada projeto, etapa ou ação é representado por uma **entidade** Ao associar indicadores a essas entidades, o gestor passa a enxergar o desempenho de cada item planejado com mais precisão.</p>
 
 Por exemplo:
 
