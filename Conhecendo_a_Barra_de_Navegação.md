@@ -3,6 +3,9 @@ A Barra de Navegação é um elemento fixo da Plataforma e está sempre visível
 
 Ela foi projetada para facilitar a navegação entre as principais ferramentas da Plataforma, permitindo que você acesse rapidamente as funções e informações mais importantes do seu ambiente de trabalho.
 
+<img width="1269" height="42" alt="image" src="https://github.com/user-attachments/assets/91444aea-f9e8-4344-bc6a-b8bd45ce45f6" />
+
+
 ---
 <div class="video-container">
   <iframe
@@ -69,9 +72,10 @@ A depender das permissões do seu perfil de usuário, os seguintes ícones podem
 * Os elementos exibidos na Barra de Navegação variam conforme as permissões atribuídas ao seu perfil de usuário.
 * Alguns ícones e funcionalidades são exclusivos para administradores ou gestores.
 
-## Exemplo visual
 
-*Insira aqui um print da tela da Barra de Navegação da Plataforma, destacando seus principais elementos.*
+<img width="1269" height="42" alt="image" src="https://github.com/user-attachments/assets/79a4cd9c-1254-4bc5-84be-aca565fd4539" />
+
+
 
 ---
 
