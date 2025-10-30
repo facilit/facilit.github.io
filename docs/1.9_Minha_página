@@ -1,0 +1,81 @@
+# Minha Página
+
+A funcionalidade **Minha Página** é um ambiente personalizado que centraliza tudo o que foi atribuído ao usuário na plataforma. Ela permite uma visualização clara e organizada de projetos, encaminhamentos, indicadores e outras ferramentas relevantes para o dia a dia de trabalho.
+
+## Para que serve a Minha Página?
+
+Com a **Minha Página**, você consegue:
+
+* Acompanhar o progresso das suas responsabilidades;
+* Gerenciar tarefas atribuídas diretamente a você;
+* Acessar ferramentas complementares como checklists, planilhas e outros recursos;
+* Visualizar o status e os prazos das atividades;
+* Personalizar a página de acordo com suas necessidades.
+
+<div class="video-container">
+  <iframe
+    src="https://player.vimeo.com/video/1132072308"
+    title="Tutoria Vimeo"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+## Como acessar a Minha Página
+
+1. Clique sobre o seu perfil de usuário, no canto superior direito da tela;
+2. Em seguida, selecione **Minha Página**;
+3. Alternativamente, clique no ícone correspondente no menu lateral esquerdo.
+
+
+
+## Componentes padrão da Minha Página
+
+Por padrão, ao abrir a Minha Página, dois quadros são exibidos:
+
+### Quadro de Encaminhamentos
+
+* Lista as ações atribuídas ao usuário, organizadas por **status**;
+* Permite **alterar o status** ao arrastar o item entre colunas;
+* Ao clicar duas vezes em um encaminhamento, é possível:
+
+  * Inserir comentários;
+  * Anexar documentos;
+  * Atualizar status e definir data de conclusão.
+* Exibe informações como:
+
+  * Entidade ou instituição relacionada;
+  * Dias restantes ou em atraso;
+  * Percentual por coluna (concluídas, em andamento, etc.).
+
+### Gerenciador de Projetos
+
+* Mostra as entidades (objetivos, projetos, etapas, tarefas e subtarefas) pelas quais o usuário é responsável;
+* Permite navegar pelos níveis de informação através das setas ou abas;
+* Oferece campo de busca e filtros avançados para localização rápida;
+* Ao clicar em uma entidade, é possível editar suas informações (se autorizado).
+
+## Personalizando a Minha Página
+
+Você pode adicionar diversos **artefatos** para adaptar a página ao seu fluxo de trabalho:
+
+* Checklists
+* Planilhas
+* Gráficos
+* Relatórios
+* Outros widgets disponíveis na plataforma
+
+Para saber o passo a passo completo, acesse o artigo: **Como personalizar a Minha Página** *(link interno sugerido)*.
+
+
+## Observações finais
+
+* Todos os usuários possuem acesso à funcionalidade **Minha Página** por padrão;
+* Os quadros de Encaminhamentos e Projetos já estão configurados automaticamente ao acessar a página pela primeira vez;
+* A personalização é opcional, mas recomendada para otimizar a rotina de trabalho.
+
+---
+
+*Espero ter ajudado! Em caso de dúvidas adicionais, consulte outros artigos da base ou entre em contato com o suporte.*
