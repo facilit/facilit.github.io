@@ -68,12 +68,6 @@ Isso permite uma gestão mais ágil e conectada, mesmo fora do escritório.
 
 ---
 
-## Exemplo visual
-
-*Insira aqui um print da tela com o QR Code gerado na opção "Target APP" do sistema web.*
-
----
-
 ## Conclusão
 
 Agora você já sabe como instalar, sincronizar e utilizar o aplicativo da Plataforma. Esse recurso foi desenvolvido para facilitar o seu dia a dia, oferecendo mais mobilidade e autonomia na gestão de suas informações.
