@@ -147,7 +147,7 @@ nav:
     - Modelos de Notificações: 10.14_Modelos_de_Notificações.md
     - Migração de Ano: 10.15_Migração_de_Ano.md
     - Acesso Rápido: 10.16_Acesso_Rápido.md
-    - Aplicativos Android & IOS: 11_Aplicativos_Android_&_IOS.md
+    - Aplicativos Android & IOS: 
     - Política de Privacidade: 11.4_Política_de_Privacidade.md
     - Integrações: 12_Integrações.md
     - Plataforma x AD (Active Directory): 12.1_Plataforma_x_AD_Active Directory.md
@@ -167,6 +167,8 @@ nav:
     - 5 WHY'S: 13.10_5_WHY'S.md
     - Mapa Mental: 13.11_Mapa_Mental.md
     - Kanban: 13.12_Kanban.md
+  - App Android e IOs: App_android_e_IOs.md
+    - Instalando o App: 11_Aplicativos_Android_&_IOS.md
   - Histórias de Sucesso:
     - Histórias de Sucesso: 15_Como_a_Plataforma_Está_Transformando_a_Gestão_de_Projetos.md
     - Monitora Bahia: 15.1_Monitora_Bahia.md
