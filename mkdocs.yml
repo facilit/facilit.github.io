@@ -5,8 +5,7 @@ theme:
   palette:
     primary: custom
   language: pt-BR
-  logo:
-    assets/logo_branca.png
+  logo: assets/logo_branca.png
   features:
     - navigation.path
     - navigation.top
@@ -147,7 +146,6 @@ nav:
     - Modelos de Notificações: 10.14_Modelos_de_Notificações.md
     - Migração de Ano: 10.15_Migração_de_Ano.md
     - Acesso Rápido: 10.16_Acesso_Rápido.md
-    - Aplicativos Android & IOS: 
     - Política de Privacidade: 11.4_Política_de_Privacidade.md
     - Integrações: 12_Integrações.md
     - Plataforma x AD (Active Directory): 12.1_Plataforma_x_AD_Active Directory.md
