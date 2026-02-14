@@ -72,6 +72,11 @@
   transform: translateX(0);
 }
 
+/* Ensure the aside element for the drawer fills vertical space when requested */
+aside#chatbot-drawer {
+  height: 100%;
+}
+
 /* Header fixo */
 .chatbot-drawer-header {
   display: flex;
