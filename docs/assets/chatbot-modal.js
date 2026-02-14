@@ -1,19 +1,32 @@
-// Chatbot Drawer Script - Suporte IA
+// Chatbot Drawer - Suporte IA (Target brand only)
 (function() {
   const CHATBOT_URL = 'https://iahml1.plataformatarget.com.br/unified';
-  const IFRAME_TIMEOUT = 5000; // ms
+  const IFRAME_TIMEOUT = 5000;
 
-  // Injeta HTML do drawer
+  // Detecta se a brand atual é "target"
+  function isTargetBrand() {
+    try {
+      const stored = JSON.parse(sessionStorage.getItem('__brand_params') || '{}');
+      const brandCode = stored.brandCode || 'target';
+      return brandCode.toLowerCase() === 'target';
+    } catch (e) {
+      return true; // default target
+    }
+  }
+
+  // Inject HTML structure
   function injectChatbotHTML() {
-    if (document.getElementById('chatbot-overlay')) return;
+    if (document.getElementById('chatbot-overlay')) {
+      return;
+    }
 
     const html = `
       <button class="chatbot-button" id="chatbot-btn" title="Suporte IA" aria-label="Abrir Suporte IA">
         <span class="chatbot-icon">💬</span>
         <span class="chatbot-text">Suporte IA</span>
       </button>
-      <div class="chatbot-overlay" id="chatbot-overlay" aria-hidden="true">
-        <aside class="chatbot-drawer" id="chatbot-drawer" role="dialog" aria-modal="true" aria-label="Suporte IA">
+      <div class="chatbot-overlay" id="chatbot-overlay">
+        <aside class="chatbot-drawer" id="chatbot-drawer">
           <header class="chatbot-drawer-header">
             <h3 class="chatbot-drawer-title">Suporte IA</h3>
             <button class="chatbot-drawer-close" id="chatbot-drawer-close" aria-label="Fechar painel">✕</button>
@@ -31,125 +44,131 @@
     document.body.insertAdjacentHTML('beforeend', html);
   }
 
-  // Cria e injeta iframe quando drawer abre
+  // Create and inject iframe
   function createIframe() {
     const body = document.getElementById('chatbot-drawer-body');
     if (!body) return;
 
-    // Clear and show loading
+    // Clear existing content
     body.innerHTML = '';
-    const loading = document.createElement('div');
-    loading.className = 'chatbot-loading';
-    loading.innerHTML = '<div class="spinner"></div><div>Carregando chat...</div>';
-    body.appendChild(loading);
 
+    // Create iframe
     const iframe = document.createElement('iframe');
     iframe.className = 'chatbot-iframe';
+    iframe.src = CHATBOT_URL;
     iframe.title = 'Suporte IA';
     iframe.setAttribute('allow', 'clipboard-read; clipboard-write; microphone; camera; autoplay');
 
-    let timedOut = false;
-    const t = setTimeout(() => {
-      timedOut = true;
-      showFallback();
+    // Setup error detection
+    const errorTimeout = setTimeout(() => {
+      if (body.contains(iframe)) {
+        showFallback();
+      }
     }, IFRAME_TIMEOUT);
 
+    // Event listeners for iframe
     iframe.onload = () => {
-      clearTimeout(t);
-      if (timedOut) return; // fallback already shown
-      // replace loading with iframe
-      body.innerHTML = '';
-      body.appendChild(iframe);
-      console.log('[chatbot] iframe loaded');
+      clearTimeout(errorTimeout);
+      console.log('[chatbot] iframe loaded successfully');
     };
 
     iframe.onerror = () => {
-      clearTimeout(t);
+      clearTimeout(errorTimeout);
+      console.log('[chatbot] iframe failed to load');
       showFallback();
     };
 
-    // Set src last to start loading after handlers are attached
-    setTimeout(() => {
-      iframe.src = CHATBOT_URL;
-    }, 50);
+    body.appendChild(iframe);
   }
 
-  // Mostra fallback se iframe falhar
+  // Show fallback link
   function showFallback() {
     const body = document.getElementById('chatbot-drawer-body');
     if (!body) return;
+
     body.innerHTML = `
       <div class="chatbot-fallback">
-        <a class="chatbot-fallback-link" href="${CHATBOT_URL}" target="_blank" rel="noopener noreferrer">Abrir em nova aba →</a>
+        <a href="${CHATBOT_URL}" target="_blank" rel="noopener noreferrer" class="chatbot-fallback-link">
+          Abrir em nova aba →
+        </a>
       </div>
     `;
   }
 
-  // Abre drawer
+  // Open drawer
   function openDrawer() {
     const overlay = document.getElementById('chatbot-overlay');
-    const btn = document.getElementById('chatbot-btn');
-    if (!overlay) return;
+    const body = document.body;
 
-    overlay.classList.add('active');
-    overlay.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('chatbot-drawer-open');
+    if (overlay) {
+      overlay.classList.add('active');
+      body.classList.add('chatbot-drawer-open');
 
-    // create iframe lazily
-    createIframe();
+      // Create iframe only when drawer is opened
+      createIframe();
 
-    // move focus to close button
-    setTimeout(() => {
-      const close = document.getElementById('chatbot-drawer-close');
-      if (close) close.focus();
-    }, 120);
-
-    // store opener for returning focus later
-    overlay._opener = btn;
+      // Set focus to close button for accessibility
+      setTimeout(() => {
+        const closeBtn = document.getElementById('chatbot-drawer-close');
+        if (closeBtn) {
+          closeBtn.focus();
+        }
+      }, 100);
+    }
   }
 
-  // Fecha drawer
+  // Close drawer
   function closeDrawer() {
     const overlay = document.getElementById('chatbot-overlay');
     const body = document.getElementById('chatbot-drawer-body');
-    if (!overlay) return;
+    const body_element = document.body;
+    const chatbotBtn = document.getElementById('chatbot-btn');
 
-    overlay.classList.remove('active');
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('chatbot-drawer-open');
+    if (overlay) {
+      overlay.classList.remove('active');
+      body_element.classList.remove('chatbot-drawer-open');
 
-    // remove iframe to free resources
-    if (body) {
-      body.innerHTML = '<div class="chatbot-loading"><div class="spinner"></div><div>Carregando chat...</div></div>';
+      // Remove iframe from DOM to free resources
+      if (body) {
+        body.innerHTML = '<div class="chatbot-loading"><div class="spinner"></div><div>Carregando chat...</div></div>';
+      }
+
+      // Return focus to button for accessibility
+      if (chatbotBtn) {
+        chatbotBtn.focus();
+      }
     }
-
-    // return focus to opener
-    try {
-      const opener = overlay._opener;
-      if (opener && typeof opener.focus === 'function') opener.focus();
-    } catch (e) {}
   }
 
   // Event listeners setup
   function setupEventListeners() {
+    const chatbotBtn = document.getElementById('chatbot-btn');
     const overlay = document.getElementById('chatbot-overlay');
-    const btn = document.getElementById('chatbot-btn');
-    const close = document.getElementById('chatbot-drawer-close');
+    const closeBtn = document.getElementById('chatbot-drawer-close');
 
-    if (btn) btn.addEventListener('click', openDrawer);
-    if (close) close.addEventListener('click', closeDrawer);
+    // Open button
+    if (chatbotBtn) {
+      chatbotBtn.addEventListener('click', openDrawer);
+    }
 
+    // Close button
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeDrawer);
+    }
+
+    // Close on overlay click
     if (overlay) {
       overlay.addEventListener('click', (e) => {
-        // close when clicking overlay (outside drawer)
-        if (e.target === overlay) closeDrawer();
+        if (e.target === overlay) {
+          closeDrawer();
+        }
       });
     }
 
+    // Close on ESC key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' || e.key === 'Esc') {
-        const overlayEl = document.getElementById('chatbot-overlay');
-        if (overlayEl && overlayEl.classList.contains('active')) {
+        if (overlay && overlay.classList.contains('active')) {
           closeDrawer();
         }
       }
@@ -158,6 +177,12 @@
 
   // Initialize when DOM is ready
   function init() {
+    // Only inject for target brand
+    if (!isTargetBrand()) {
+      console.log('[chatbot] Brand is not Target, drawer disabled');
+      return;
+    }
+
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => {
         injectChatbotHTML();
@@ -171,5 +196,4 @@
 
   // Start initialization
   init();
-
 })();
