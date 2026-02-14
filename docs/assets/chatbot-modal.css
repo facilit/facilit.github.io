@@ -3,32 +3,39 @@
 /* Floating Button (pill style) */
 .chatbot-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 0;
   z-index: 1100;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding: 12px 16px;
-  border-radius: 999px;
+  border-radius: 6px 0 0 6px;
   background: var(--md-primary-fg, linear-gradient(135deg, #2196F3, #1976D2));
   color: var(--md-primary-contrast, #fff);
   border: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.32s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.18s ease;
+  white-space: nowrap;
 }
 
 .chatbot-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: -4px 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .chatbot-button .chatbot-icon {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
+}
+
+/* Quando drawer está aberto, botão sobe para encostamento */
+.chatbot-overlay.active ~ .chatbot-button,
+.chatbot-overlay.active + .chatbot-button,
+.chatbot-button.active {
+  bottom: calc(85vh + 0px);
 }
 
 /* Overlay semicircular leve */
@@ -194,14 +201,19 @@ body.chatbot-drawer-open {
 
 @media (max-width: 768px) {
   .chatbot-button {
-    right: 14px;
-    bottom: 14px;
+    right: 0;
+    bottom: 16px;
     padding: 10px 12px;
-    font-size: 13px;
+    font-size: 12px;
+    border-radius: 0;
   }
 
   .chatbot-button .chatbot-icon {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .chatbot-button .chatbot-text {
+    display: none;
   }
 
   .chatbot-drawer {
@@ -218,6 +230,11 @@ body.chatbot-drawer-open {
   .chatbot-drawer-title {
     font-size: 15px;
   }
+
+  .chatbot-overlay.active ~ .chatbot-button,
+  .chatbot-overlay.active + .chatbot-button {
+    bottom: 100vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -227,7 +244,7 @@ body.chatbot-drawer-open {
   }
 
   .chatbot-button .chatbot-icon {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .chatbot-button .chatbot-text {

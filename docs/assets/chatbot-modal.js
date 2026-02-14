@@ -99,10 +99,12 @@
   function openDrawer() {
     const overlay = document.getElementById('chatbot-overlay');
     const body = document.body;
+    const btn = document.getElementById('chatbot-btn');
 
     if (overlay) {
       overlay.classList.add('active');
       body.classList.add('chatbot-drawer-open');
+      if (btn) btn.classList.add('active');
 
       // Create iframe only when drawer is opened
       createIframe();
@@ -127,6 +129,7 @@
     if (overlay) {
       overlay.classList.remove('active');
       body_element.classList.remove('chatbot-drawer-open');
+      if (chatbotBtn) chatbotBtn.classList.remove('active');
 
       // Remove iframe from DOM to free resources
       if (body) {
