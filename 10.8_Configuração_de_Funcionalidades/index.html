@@ -1,0 +1,7057 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://172.19.4.153:8000/10.8_Configura%C3%A7%C3%A3o_de_Funcionalidades/">
+      
+      
+        <link rel="prev" href="../10.7.1_Permiss%C3%A3o_de_visualizar_e_atribuir_institui%C3%A7%C3%B5es/">
+      
+      
+        <link rel="next" href="../10.11_Idioma/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Configuração de Funcionalidades - Base de Conhecimentos da Plataforma</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/chatbot-modal.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#acesso-a-tela-de-configuracao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Base de Conhecimentos da Plataforma" class="md-header__button md-logo" aria-label="Base de Conhecimentos da Plataforma" data-md-component="logo">
+      
+  <img src="../assets/logo_branca.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Base de Conhecimentos da Plataforma
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configuração de Funcionalidades
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Base de Conhecimentos da Plataforma" class="md-nav__button md-logo" aria-label="Base de Conhecimentos da Plataforma" data-md-component="logo">
+      
+  <img src="../assets/logo_branca.png" alt="logo">
+
+    </a>
+    Base de Conhecimentos da Plataforma
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Visão Geral
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.Vis%C3%A3o_Geral__brand-target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.Vis%C3%A3o_Geral__brand-serpro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.Vis%C3%A3o_Geral__brand-whitelabel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.Vis%C3%A3o_Geral__brand-planejar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.1_Um_pouco_de_hist%C3%B3ria__brand-planejar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Um pouco de história
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.1_Um_pouco_de_hist%C3%B3ria__brand-serpro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Um pouco de história
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.1_Um_pouco_de_hist%C3%B3ria__brand-target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Um pouco de história
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.1_Um_pouco_de_hist%C3%B3ria__brand-whitelabel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Um pouco de história
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2_A_Plataforma__brand-planejar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2_A_Plataforma__brand-serpro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2_A_Plataforma__brand-target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.2_A_Plataforma__brand-whitelabel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A Plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.3_Estrutura_da_Plataforma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estrutura da Plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.4_Reuni%C3%B5es_de_Monitoramento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reuniões de Monitoramento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.5_Estrutura_de_atualiza%C3%A7%C3%A3o_e_inclus%C3%A3o_das_informa%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estrutura de atualização e inclusão das informações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.6_Gloss%C3%A1rio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.7_Conhecendo_a_barra_de_navega%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Barra de Navegação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.8_Central_de_notifica%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Central de Notificações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.9_Minha_p%C3%A1gina/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Minha Página
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Níveis de Informação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Níveis de Informação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_N%C3%ADveis_de_Informa%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Níveis de Informação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.1_Cria%C3%A7%C3%A3o_dos_N%C3%ADveis_%28N1%2C_N2%2C_N3%2C_N4%2C_N5_e_N6%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criação dos Níveis (N1, N2, N3, N4, N5 e N6)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.2_Como_Editar_e_Remover_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como Editar e Remover Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.1_P%C3%A1gina_da_Entidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Página da Entidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.20_Bloco_Detalhado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloco Detalhado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.21_Canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canvas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.22_Quadro_de_Vis%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quadro de Visões
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Menu de Ações
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Menu de Ações
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2_Menu_de_A%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Menu de Ações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.1_Mover%2C_Copiar_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mover, Copiar Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.2_Observa%C3%A7%C3%B5es%2C_Notas_T%C3%A9cnicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Observações, Notas Técnicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.3_Entidades_Vinculadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entidades Vinculadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.2.4_Galeria_de_Imagens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galeria de Imagens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.6_Problemas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Envolvidos nos Projetos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Envolvidos nos Projetos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.3_Envolvidos_nos_Projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Envolvidos nos Projetos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4_%C3%9Altimas_atualiza%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Últimas atualizações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.5_Reposit%C3%B3rio_de_Documentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repositório de Documentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.4.7_Riscos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Riscos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de Entidades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos de Entidades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.5_Modelos_de_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.5.1_Criar_entidade_baseada_em_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criar entidade baseada em template
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.5.2_Gerenciador_de_Templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gerenciador de Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.6_Configura%C3%A7%C3%B5es_de_Datas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurações de Datas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.7_Checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.8_Importa%C3%A7%C3%A3o_de_entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importação de entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.9_Planilhas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planilhas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.10_Financeiro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Financeiro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.11_Imagem_mapeada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imagem mapeada
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.12_Gantt_Sincronizado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gantt Sincronizado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.12.1_Criando_Projetos_no_Gantt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criando Projetos no Gantt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.12.2_Importando_Arquivos_do_Project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importando Arquivos do Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.13_Quadro_de_Projetos_Kanban/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quadro de Projetos - Kanban
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.14_Quadro_Estrat%C3%A9gico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quadro Estratégico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.23_Criar_vis%C3%B5es_manualmente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criar Visões Manualmente no Quadro Estratégico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.15_Vers%C3%A1til/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versátil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.16_Bloco_Agrupado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloco Agrupado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.17_Linha_de_base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linha de Base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.18_Gr%C3%A1fico_de_evolu%C3%A7%C3%A3o_do_Projeto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gráfico de evolução do Projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Indicadores
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Gestão de Indicadores
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_Gest%C3%A3o_de_Indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Indicadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.1_Gerenciador_de_Indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gerenciador de Indicadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.2_Matriz_de_Indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Indicadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.4_Indicadores_Compostos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicadores Compostos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.3_Publicador_de_indicadores_compostos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publicador de Indicadores Compostos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.6_Configura%C3%A7%C3%A3o_do_Publicador_de_Indicador_Composto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Como Configurar o Publicador de Indicador Composto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.5_An%C3%A1lise_de_Desempenho_do_Indicador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Análise de Desempenho do Indicador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.11_Obrigatoriedade_de_Campos_na_An%C3%A1lise_de_Desempenho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Obrigatoridade dos Campos de Análise de Desempenho
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.7_M%C3%A9todo_de_c%C3%A1lculo_e_polaridade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Método de cálculo e polaridade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.8_Indicadores_Simples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indicadores Simples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.9_Vincular_Indicadores_%C3%A0s_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vincular Indicadores às Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.10_Editar_indicadores_em_massa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editar Indicadores em Massa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campos Dinâmicos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Campos Dinâmicos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.19_Campos_Din%C3%A2micos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campos Dinâmicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.19.1_Publicador_de_Campos_Din%C3%A2mico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publicador de Campos Dinâmico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.19.2_Campo_Din%C3%A2mico_tipo_institui%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campo Dinâmico tipo Instituição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reuniões, Apresentações e Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reuniões, Apresentações e Encaminhamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_Reuni%C3%B5es%2C_Apresenta%C3%A7%C3%B5es_e_Encaminhamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reuniões, Apresentações e Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.1_Apresenta%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apresentações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2_Atas_de_Reuni%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas de Reunião
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2.2_Confirma%C3%A7%C3%A3o_de_participa%C3%A7%C3%A3o_na_reuni%C3%A3o_com_Justificativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Confirmação de participação na reunião com Justificativa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2.3_Vincular_Encaminhamentos_na_Ata_de_Reuni%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vincular Encaminhamentos na Ata de Reunião
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2.4_Relat%C3%B3rio_de_Participantes_da_Reuni%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatório de Participantes da Reunião
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3_Encaminhamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3.2_Gerenciador_de_Encaminhamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gerenciador de Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3.3_Quadro_Kanban_de_Encaminhamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quadro Kanban de Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.4_Enviar_mensagem_para_Whatsapp_do_respons%C3%A1vel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enviar mensagem via WhatsApp ao responsável do Projeto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatórios e Dashboards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Relatórios e Dashboards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7_Relat%C3%B3rios_e_Dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatórios e Dashboards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.1_Exporta%C3%A7%C3%A3o_de_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exportação de Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatórios Gerenciais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Relatórios Gerenciais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.2_Relat%C3%B3rios_Gerenciais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatórios Gerenciais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.2.1_Relat%C3%B3rio_Situacional_Detalhado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatório Situacional Detalhado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.2.2_Relat%C3%B3rio_de_Log_de_Permiss%C3%B5es_de_Usu%C3%A1rios_Geradas_a_partir_dos_Grupos_para_Gestores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Relatório de Log de Permissões de Usuários Geradas a partir dos Grupos para Gestores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.3_Exporta%C3%A7%C3%A3o_de_Indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exportação de Indicadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.8_Dashboard_ODS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard ODS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8_Gest%C3%A3o_da_Comunica%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão da Comunicação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.9_Exporta%C3%A7ao_de_encaminhamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exportar Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.10_Exportar_usu%C3%A1rios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exportar Usuários
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geolocalização
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geolocalização
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9_Geolocaliza%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geolocalização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.1_Localiza%C3%A7%C3%A3o_Geogr%C3%A1fica_das_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localização Geográfica das Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.2_Mapa_da_Regionaliza%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa da Regionalização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administração da Plataforma
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Administração da Plataforma
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_Administra%C3%A7%C3%A3o_da_Plataforma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administração da Plataforma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.1_Configura%C3%A7%C3%A3o_de_P%C3%A1ginas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuração de Páginas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.1.4_Cria%C3%A7%C3%A3o_de_P%C3%A1ginas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criação de Páginas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.1.5_Configura%C3%A7%C3%A3o_de_N_Abas_nas_Entidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuração de N Abas nas Entidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2_Cadastros_Auxiliares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cadastros Auxiliares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.1_Cria%C3%A7%C3%A3o_de_Tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Criação de Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.2_Importar_Respons%C3%A1veis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importar Responsáveis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.3.1_Card%20de%20Institui%C3%A7%C3%B5es%20com%20Preview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Card de Instituições com Preview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.3_Institui%C3%A7%C3%B5es_departamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instituições (departamentos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.6_Adicionar_tipo_no_cadastro_de_Insitui%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Campo Tipo de Instituições
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.4_Fontes%20e%20Grupos%20Financeiros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fontes e Grupos Financeiros
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.2.5_Status_Status%20Informado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Status / Status Informado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.3_Gest%C3%A3o_de_Usu%C3%A1rios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Usuários
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.4_Grupos_de_Usu%C3%A1rios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grupos de Usuários
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.5_Permiss%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissões
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.5.3_Permiss%C3%B5es_de_Encaminhamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissões de Encaminhamentos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.5.2_Permiss%C3%B5es_de_Indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissões de Indicadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.5.4_Adicionar_permiss%C3%B5es_em_Lote/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adicionar permissões em Lote
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.7_Papel_Customizado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papel Customizado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.7.1_Permiss%C3%A3o_de_visualizar_e_atribuir_institui%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissão de visualizar e atribuir instituições
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuração de Funcionalidades
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuração de Funcionalidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acesso-a-tela-de-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acesso à tela de configuração
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-configurar-cada-funcionalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como configurar cada funcionalidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como configurar cada funcionalidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-entidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Entidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Indicadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gerenciador-de-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gerenciador de Projetos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-encaminhamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Encaminhamentos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consideracoes-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Considerações importantes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado esperado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossario-das-configuracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossário das Configurações
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Glossário das Configurações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-informado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status informado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datas:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duração:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percentual-de-conclusao-calculado-automaticamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Percentual de conclusão calculado automaticamente:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repactuacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repactuação:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TAG’s:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsavel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsável:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultor:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsavel-somente-administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsável somente administrador:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ativoinativo-so-para-gestores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ativo/inativo só para gestores:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ativoinativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ativo/inativo:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GRÁFICOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GRÁFICOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecionar-graficos-no-meus-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecionar gráficos no “Meus Projetos”:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selecionar gráficos no “Meus Projetos”:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-cronograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Cronograma:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-cronograma-orcado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Cronograma Orçado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-ja-habilitado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco já habilitado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-detalhado-ja-habilitado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco Detalhado já habilitado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-detalhado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco Detalhado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-diagrama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Diagrama:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-agrupado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco Agrupado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-acompanhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Acompanhamento:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FINANCEIRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FINANCEIRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acompanhamento-financeiro-da-entidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acompanhamento financeiro da entidade:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coluna-codigo-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna Código Financeiro:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-empenhado-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Empenhado” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-liquidado-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Liquidado” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-orcado-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Orçado” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-pago-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Pago” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coluna-percentual-de-execucao-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna 'Percentual De Execução' No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-celula-valor-interno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meta Célula Valor Interno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Células
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coluna-grupo-de-despesa-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna 'Grupo De Despesa' No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listagem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#botao-exibir-filhos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Botão Exibir Filhos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo-loa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Código LOA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instituicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instituição
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-filhos-ja-cadastrados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Número De Filhos Já Cadastrados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-para-pagina-de-gestao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link Para Página De Gestão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-acoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menu De Ações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-e-mover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copiar E Mover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editar-acompanhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar Acompanhamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-acoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menu De Ações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galeria-de-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galeria De Imagens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geolocalizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geolocalização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perspectiva-e-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perspectiva E Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status Macro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-critico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marco Crítico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restringir-copiar-e-mover-para-administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restringir Copiar E Mover Para Administrador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restringir-copiar-e-mover-para-gestores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restringir Copiar E Mover Para Gestores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#providencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Providência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositorio-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositório De Dados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerenciador-de-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gerenciador De Riscos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerenciador-egp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gerenciador EGP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-check-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Check List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-entidades-com-status-nao-planejado-na-busca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Entidades Com Status Não Planejado Na Busca
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-status-nao-planejado-na-percentual-e-nas-datas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Status Não Planejado Na Percentual E Nas Datas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-exibicao-do-status-informado-na-pagina-do-painel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Exibição Do Status Informado Na Página Do Painel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.11_Idioma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Idioma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.12_Tema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.13_Configura%C3%A7%C3%A3o_de_E-mail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuração de E-mail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.14_Modelos_de_Notifica%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos de Notificações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.15_Migra%C3%A7%C3%A3o_de_Ano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migração de Ano
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.16_Acesso_R%C3%A1pido/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acesso Rápido
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.4_Pol%C3%ADtica_de_Privacidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Política de Privacidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_Integra%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrações
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.1_Plataforma_x_AD_Active%20Directory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plataforma x AD (Active Directory)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.1.2_Experi%C3%AAncias_de_Integra%C3%A7%C3%A3o_realizadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Experiências de Integração realizadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.1.3_Integra%C3%A7%C3%A3o_com_Sistema_de_Obras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integração com Sistema de Obras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologias de Gestão
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodologias de Gestão
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Metodologias_de_Gest%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologias de Gestão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.1_Projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projetos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.2_Mapa_Estrat%C3%A9gico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa Estratégico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.3_BSC_-_Balanced_Score_Card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BSC- Balanced Score Card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.4_Gest%C3%A3o_a_Vista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão a Vista
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.5_KPI_-_Key_Performance_Indicator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KPI- Key Performance Indicator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.6_OKR_-_Objectives_and_Key_Results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OKR- Objectives and Key Results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.7_Canvas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canvas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.8_Scrum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scrum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.9_5W2H/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5W2H
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.10_5_WHY%27S/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 WHY'S
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.11_Mapa_Mental/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa Mental
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.12_Kanban/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    App Android e IOs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    App Android e IOs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16_Plataforma_App/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    App Android e IOs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_Aplicativos_Android_e_IOS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalando o App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórias de Sucesso
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Histórias de Sucesso
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15_Como_a_Plataforma_Est%C3%A1_Transformando_a_Gest%C3%A3o_de_Projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histórias de Sucesso
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15.1_Monitora_Bahia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitora Bahia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15.2_Depoimento_sobre_o_Monitora_Bahia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Depoimento sobre o Monitora Bahia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15.3_Saiu_na_Globo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Saiu na Globo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acesso-a-tela-de-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acesso à tela de configuração
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-configurar-cada-funcionalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como configurar cada funcionalidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como configurar cada funcionalidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-entidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Entidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Indicadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gerenciador-de-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gerenciador de Projetos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-encaminhamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Encaminhamentos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consideracoes-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Considerações importantes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado esperado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossario-das-configuracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossário das Configurações
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Glossário das Configurações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#status-informado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status informado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peso:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Datas:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Duração:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percentual-de-conclusao-calculado-automaticamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Percentual de conclusão calculado automaticamente:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repactuacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repactuação:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TAG’s:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsavel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsável:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultor:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsavel-somente-administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsável somente administrador:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ativoinativo-so-para-gestores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ativo/inativo só para gestores:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ativoinativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ativo/inativo:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GRÁFICOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GRÁFICOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecionar-graficos-no-meus-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selecionar gráficos no “Meus Projetos”:
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selecionar gráficos no “Meus Projetos”:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-cronograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Cronograma:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-cronograma-orcado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Cronograma Orçado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-ja-habilitado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco já habilitado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-detalhado-ja-habilitado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco Detalhado já habilitado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-detalhado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco Detalhado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-diagrama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Diagrama:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-bloco-agrupado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Bloco Agrupado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-acompanhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Acompanhamento:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FINANCEIRO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FINANCEIRO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acompanhamento-financeiro-da-entidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acompanhamento financeiro da entidade:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coluna-codigo-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna Código Financeiro:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-empenhado-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Empenhado” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-liquidado-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Liquidado” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-orcado-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Orçado” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campo-pago-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campo “Pago” No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coluna-percentual-de-execucao-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna 'Percentual De Execução' No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-celula-valor-interno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meta Célula Valor Interno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Células
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coluna-grupo-de-despesa-no-acompanhamento-financeiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coluna 'Grupo De Despesa' No Acompanhamento Financeiro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listagem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#botao-exibir-filhos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Botão Exibir Filhos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigo-loa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Código LOA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instituicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instituição
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numero-de-filhos-ja-cadastrados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Número De Filhos Já Cadastrados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-para-pagina-de-gestao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link Para Página De Gestão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-acoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menu De Ações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copiar-e-mover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copiar E Mover
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editar-acompanhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar Acompanhamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-de-acoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menu De Ações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galeria-de-imagens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galeria De Imagens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geolocalizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geolocalização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perspectiva-e-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perspectiva E Resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-macro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status Macro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-critico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marco Crítico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restringir-copiar-e-mover-para-administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restringir Copiar E Mover Para Administrador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restringir-copiar-e-mover-para-gestores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restringir Copiar E Mover Para Gestores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problemas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#providencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Providência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositorio-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositório De Dados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerenciador-de-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gerenciador De Riscos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerenciador-egp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gerenciador EGP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-check-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Check List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-entidades-com-status-nao-planejado-na-busca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Entidades Com Status Não Planejado Na Busca
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-status-nao-planejado-na-percentual-e-nas-datas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Status Não Planejado Na Percentual E Nas Datas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitar-exibicao-do-status-informado-na-pagina-do-painel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Habilitar Exibição Do Status Informado Na Página Do Painel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>A Plataforma oferece um conjunto amplo de funcionalidades que podem ser ativadas ou desativadas conforme as necessidades específicas de sua organização. Esse recurso é ideal para manter a experiência do usuário mais simples e personalizada, destacando apenas as informações e recursos mais relevantes.</p>
+<blockquote>
+<p>Às funcionalidades incluem opções relacionadas às entidades, indicadores, gerenciamento de projetos, encaminhamentos e financeiro.</p>
+</blockquote>
+<hr />
+<div class="video-container">
+  <iframe
+    src="https://player.vimeo.com/video/1131285308"
+    title="Tutoria Vimeo"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<hr />
+<p><img width="1570" height="862" alt="image" src="https://github.com/user-attachments/assets/b18fd9c7-5247-4552-948f-4da1411edcf6" /></p>
+<hr />
+<h2 id="acesso-a-tela-de-configuracao">Acesso à tela de configuração</h2>
+<ol>
+<li>Clique sobre o seu perfil de usuário (canto superior direito).</li>
+<li>Selecione <strong>Nova Administração</strong>.</li>
+<li>Clique em <strong>Funcionalidades</strong>.</li>
+</ol>
+<p><img width="1263" height="630" alt="image" src="https://github.com/user-attachments/assets/6bd73841-f32f-47dc-9979-3d7e5d83fa64" /></p>
+<p>Apenas usuários com permissão de administrador da plataforma conseguem realizar essas configurações.</p>
+<h2 id="como-configurar-cada-funcionalidade">Como configurar cada funcionalidade</h2>
+<p>A tela de funcionalidades é dividida em abas temáticas. Em cada uma delas, você pode ativar ou ocultar recursos específicos da plataforma.</p>
+<h3 id="1-entidades">1. Entidades</h3>
+<p>Permite definir quais campos serão visíveis no cadastro e na visualização das entidades (objetivos, projetos, etapas etc.).</p>
+<ul>
+<li>Os campos estão organizados por categorias: Dados gerais, Gráficos, Financeiro, Listagem, Menu de ações, Outros e Status.</li>
+<li>Para exibir um campo em todos os níveis, marque a opção geral.</li>
+<li>Para limitar a visualização por nível, selecione apenas os círculos correspondentes.</li>
+</ul>
+<p><strong>Exemplo:</strong> Ativar a funcionalidade de <strong>Geolocalização</strong> apenas nos níveis 1, 2 e 3.</p>
+<h3 id="2-indicadores">2. Indicadores</h3>
+<ul>
+<li>Ativa as opções de análise de desempenho.</li>
+<li>Permite configurar as cores e metas associadas aos status dos indicadores.</li>
+</ul>
+<p>Ao finalizar os ajustes, as configurações são salvas automaticamente.</p>
+<h3 id="3-gerenciador-de-projetos">3. Gerenciador de Projetos</h3>
+<ul>
+<li>Permite definir quais abas estarão disponíveis na visualização e edição dos projetos.</li>
+</ul>
+<h3 id="4-encaminhamentos">4. Encaminhamentos</h3>
+<ul>
+<li>Permite habilitar quais tipos de encaminhamentos estarão disponíveis durante a sua criação.</li>
+</ul>
+<h3 id="5-financeiro">5. Financeiro</h3>
+<ul>
+<li>Define quais colunas serão exibidas e em qual ordem ao adicionar dados financeiros em um projeto.</li>
+</ul>
+<h2 id="consideracoes-importantes">Considerações importantes</h2>
+<ul>
+<li>As configurações feitas nas abas de <strong>Entidades</strong>, <strong>Projetos</strong> e <strong>Encaminhamentos</strong> têm aplicação imediata, mas podem levar alguns minutos para serem refletidas, dependendo da quantidade de entidades cadastradas.</li>
+<li>As configurações de <strong>Indicadores</strong> e <strong>Financeiro</strong> são aplicadas de forma específica, podendo exigir ajustes manuais complementares.</li>
+<li>Caso um usuário ainda visualize um recurso que foi desabilitado, é provável que a propagação ainda esteja em andamento.</li>
+</ul>
+<h2 id="resultado-esperado">Resultado esperado</h2>
+<p>Com a configuração adequada das funcionalidades, sua organização terá uma plataforma mais objetiva, com foco apenas nas informações essenciais para cada nível de atuação.</p>
+<hr />
+<hr />
+<h1 id="glossario-das-configuracoes">Glossário das Configurações</h1>
+<p><strong>ENTIDADE</strong>
+<strong>DADOS GERAIS</strong>
+<strong>Descrição:</strong> campo de descrição da entidade.</p>
+<h4 id="status-informado">Status informado:</h4>
+<p>campo de status informado da entidade. O status informado, diferente do status automático do Plataforma através das datas, é opcional e é utilizado para organizações que necessitem de uma forma manual de escolha do status.</p>
+<h4 id="peso">Peso:</h4>
+<p>O campo peso é utilizado para o cálculo do percentual de conclusão da entidade superior. Deve ser habilitado apenas se a organização trabalha com cálculo de média ponderada para obtenção do grau de conclusão. À nível estratégico, é utilizado para o funcionamento do <strong>BSC</strong> (Balanced Score Card), definindo pesos para os objetivos estratégicos.</p>
+<p>#### Status: 
+ Define se o nível de informação terá o status automático, ou seja, a partir das datas estabelecidas.</p>
+<h4 id="datas">Datas:</h4>
+<p>Define se a entidade terá o atributo datas. Em alguns casos, por exemplo, os níveis estratégicos (geralmente fica no N1 ou N1 e N2) não possuem datas específicas por que seus prazos são calculados a partir dos demais níveis.</p>
+<h4 id="duracao">Duração:</h4>
+<p>Campo que definirá a duração da entidade, ou seja, o tempo de execução da entidade.</p>
+<h4 id="percentual-de-conclusao-calculado-automaticamente">Percentual de conclusão calculado automaticamente:</h4>
+<p>O sistema irá calcular o percentual da entidade de acordo com as entidades filhas. Por exemplo, se um projeto tem 4 etapas (filhos), sendo 2 concluídas (ou seja, com 100%) e 2 à iniciar, o sistema irá considerar que o projeto está em 50%. É realizado uma média ponderada do peso e percentual de conclusão.</p>
+<h4 id="repactuacao">Repactuação:</h4>
+<p>Habilita a função que exibe a repactuação de prazos no gráfico de evolução, com a data da repactuação e o usuário que gerou a mudança.</p>
+<h4 id="tags">TAG’s:</h4>
+<p>Habilita a possibilidade de atribuir TAG ao nível específico. TAG’s são como categorias que ajudam a localizar e agrupar projetos e etapas.</p>
+<p>#### Campo monitor: 
+Define se o nível de informação terá um monitor atribuído diretamente. Este campo é utilizado por organizações que possuem colaboradores que auxiliarão no monitoramento da entidade mas não são responsáveis por sua execução. A Plataforma utilizará no momento do cadastro do monitor o mesmo banco de responsáveis (gestores) incluídos nos cadastros auxiliares.</p>
+<h4 id="responsavel">Responsável:</h4>
+<p>Define se o nível de informação terá um gestor responsável atribuído diretamente.</p>
+<h4 id="consultor">Consultor:</h4>
+<p>Define se o nível de informação terá um consultor atribuído diretamente. Este campo é utilizado por organizações que possuem colaboradores que auxiliarão no monitoramento da entidade mas não são responsáveis por sua execução. A Plataforma utilizará no momento do cadastro do monitor o mesmo banco de responsáveis (gestores) incluídos nos cadastros auxiliares.</p>
+<h4 id="responsavel-somente-administrador">Responsável somente administrador:</h4>
+<p>Habilitar essa função torna que o campo responsável disponível para alteração apenas para usuários administradores</p>
+<h4 id="ativoinativo-so-para-gestores">Ativo/inativo só para gestores:</h4>
+<p>Permite que apenas os gestores possam inativar ou reativar uma entidade.</p>
+<h4 id="ativoinativo">Ativo/inativo:</h4>
+<p>Permite que os usuários possam inativar ou reativar uma entidade.</p>
+<h3 id="graficos">GRÁFICOS</h3>
+<h4 id="grafico-de-bloco">Gráfico de Bloco:</h4>
+<p>Exibe o gráfico de bloco no momento do cadastro como possibilidade para habilitar. O gráfico exibe as entidades filhas com prazos de término previsto e término realizado. É exibido também um ícone de “carinha” relacionado com o status (carinha triste e carinha feliz). Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<h3 id="selecionar-graficos-no-meus-projetos">Selecionar gráficos no “Meus Projetos”:</h3>
+<h4 id="grafico-de-cronograma">Gráfico de Cronograma:</h4>
+<p>Exibe o gráfico de cronograma no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<h4 id="grafico-de-cronograma-orcado">Gráfico de Cronograma Orçado:</h4>
+<p>Exibe o gráfico de cronograma orçado no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<h4 id="grafico-de-bloco-ja-habilitado">Gráfico de Bloco já habilitado:</h4>
+<p>Ao marcar esta funcionalidade a opção de bloco já estará habilitada no momento de criação de uma entidade. Essa função evita que o usuário esqueça de marcar o gráfico de bloco para que a entidade apareça no gráfico.</p>
+<h4 id="grafico-de-bloco-detalhado-ja-habilitado">Gráfico de Bloco Detalhado já habilitado:</h4>
+<p>Ao marcar esta funcionalidade a opção de bloco detalhado já estará habilitada no momento de criação de uma entidade. Essa função evita que o usuário esqueça de marcar o gráfico de bloco detalhado para que a entidade apareça no gráfico.</p>
+<h4 id="grafico-de-bloco-detalhado">Gráfico de Bloco Detalhado:</h4>
+<p>Exibe o gráfico de bloco detalhado no momento do cadastro como possibilidade para habilitar. O gráfico exibe as entidades filhas com prazos de início e término previsto e início e término realizado, além do responsável e descrição.Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<h4 id="grafico-de-diagrama">Gráfico de Diagrama:</h4>
+<p>Exibe o gráfico de diagrama no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<h4 id="grafico-de-bloco-agrupado">Gráfico de Bloco Agrupado:</h4>
+<p>Exibe o gráfico de bloco agrupado no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado. Mais detalhes clique aqui Gráfico de Bloco Agrupado.</p>
+<h4 id="grafico-de-acompanhamento">Gráfico de Acompanhamento:</h4>
+<p>Exibe o gráfico de acompanhamento no momento do cadastro como possibilidade para habilitar. Para que o gráfico apareça na página é necessário adicionar o publicador gráfico nas configurações de página do nível desejado.</p>
+<h3 id="financeiro">FINANCEIRO</h3>
+<h4 id="acompanhamento-financeiro-da-entidade">Acompanhamento financeiro da entidade:</h4>
+<p>Habilita a funcionalidade de acompanhamento financeiro.</p>
+<h4 id="coluna-codigo-financeiro">Coluna Código Financeiro:</h4>
+<p>Habilita um campo para inclusão do código financeiro da entidade.</p>
+<h4 id="campo-empenhado-no-acompanhamento-financeiro">Campo “Empenhado” No Acompanhamento Financeiro</h4>
+<p>Habilita o campo empenhado para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar quanto já foi empenhado para a entidade.</p>
+<h4 id="campo-liquidado-no-acompanhamento-financeiro">Campo “Liquidado” No Acompanhamento Financeiro</h4>
+<p>Habilita o campo liquidado para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar quanto já foi liquidado para a entidade.</p>
+<h4 id="campo-orcado-no-acompanhamento-financeiro">Campo “Orçado” No Acompanhamento Financeiro</h4>
+<p>Habilita o campo orçado para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar o valor orçado para a entidade.</p>
+<h4 id="campo-pago-no-acompanhamento-financeiro">Campo “Pago” No Acompanhamento Financeiro</h4>
+<p>Habilita o campo pago para o acompanhamento financeiro das entidades, ou seja, os gestores poderão indicar quanto já foi pago para a entidade.</p>
+<h4 id="coluna-percentual-de-execucao-no-acompanhamento-financeiro">Coluna 'Percentual De Execução' No Acompanhamento Financeiro</h4>
+<p>Exibe a coluna de percentual de execução financeira que por padrão é calculada pela relação do pago x orçado.</p>
+<h4 id="meta-celula-valor-interno">Meta Célula Valor Interno</h4>
+<h4 id="celulas">Células</h4>
+<h4 id="coluna-grupo-de-despesa-no-acompanhamento-financeiro">Coluna 'Grupo De Despesa' No Acompanhamento Financeiro</h4>
+<p>Habilita segmentação financeira por grupo de despesa. Os grupos de despesas funcionam como centros de custos em que os gestores poderão alocar financeiramente.</p>
+<h4 id="listagem">Listagem</h4>
+<p>Funcionalidades opcionais da listagem no gerenciamento:</p>
+<h4 id="botao-exibir-filhos">Botão Exibir Filhos</h4>
+<p>Habilita o botão para descer um nível de informação.</p>
+<h4 id="codigo-loa">Código LOA</h4>
+<p>Exibe o código financeiro na listagem.</p>
+<h4 id="instituicao">Instituição</h4>
+<p>Exibe a instituição na listagem de entidades.</p>
+<h4 id="numero-de-filhos-ja-cadastrados">Número De Filhos Já Cadastrados</h4>
+<p>Exibe o quantitativo de filhos que a entidade possui na listagem.</p>
+<h4 id="link-para-pagina-de-gestao">Link Para Página De Gestão</h4>
+<p>Habilita o botão de acessar a página (botão de corrente) no gerenciamento.</p>
+<h4 id="menu-de-acoes">Menu De Ações</h4>
+<h4 id="conclusao">Conclusão</h4>
+<h4 id="copiar-e-mover">Copiar E Mover</h4>
+<p>Habilita a funcionalidade que possibilita copiar ou mover uma entidade.</p>
+<h4 id="editar-acompanhamento">Editar Acompanhamento</h4>
+<p>Habilita a inclusão da função acompanhamento. Esta funcionalidade permite acompanhar meta e realizado apenas com os valores, gerando um gráfico de colunas ou uma tabela de valores simples.</p>
+<h4 id="menu-de-acoes_1">Menu De Ações</h4>
+<p>Habilita a visualização do menu de ações, que é um caminho para diversas funcionalidades como observações, galeria de imagens, riscos, problemas, etc.</p>
+<h4 id="galeria-de-imagens">Galeria De Imagens</h4>
+<p>Habilita a funcionalidade de galeria de imagem, permitindo a inclusão de imagens no nível de informação.</p>
+<h4 id="geolocalizacao">Geolocalização</h4>
+<p>Habilita a funcionalidade que permite georreferenciar a entidade, por região ou coordenada geográfica.</p>
+<h4 id="perspectiva-e-resultado">Perspectiva E Resultado</h4>
+<p>Habilita a funcionalidade de perspectiva e resultado.</p>
+<h4 id="status-macro">Status Macro</h4>
+<p>Habilita o status macro.</p>
+<h4 id="marco-critico">Marco Crítico</h4>
+<p>Habilita a inclusão de marcos críticos.</p>
+<h4 id="restringir-copiar-e-mover-para-administrador">Restringir Copiar E Mover Para Administrador</h4>
+<p>Restringe a funcionalidade mover e copiar apenas para administradores.</p>
+<h4 id="restringir-copiar-e-mover-para-gestores">Restringir Copiar E Mover Para Gestores</h4>
+<p>Restringe a funcionalidade mover e copiar apenas para gestores.</p>
+<h4 id="problemas">Problemas</h4>
+<p>Habilita a funcionalidade que permite registrar problemas e ações corretivas.</p>
+<h4 id="providencia">Providência</h4>
+<p>Habilita a inclusão de providências.</p>
+<h4 id="observacao">Observação</h4>
+<p>Habilita a utilização de observações na entidade. As observações são exibidas nas notas técnicas.</p>
+<h4 id="repositorio-de-dados">Repositório De Dados</h4>
+<p>Habilita a funcionalidade de repositório de dados, permitindo a inclusão de arquivos no nível de informação. Funciona como uma área de anexos da entidade.</p>
+<h4 id="gerenciador-de-riscos">Gerenciador De Riscos</h4>
+<p>Habilita a funcionalidade que permite registrar riscos e ações de contingência.</p>
+<h4 id="gerenciador-egp">Gerenciador EGP</h4>
+<h4 id="habilitar-check-list">Habilitar Check List</h4>
+<p>Habilita a utilização da funcionalidade de check list.</p>
+<h4 id="status">Status</h4>
+<h4 id="habilitar-entidades-com-status-nao-planejado-na-busca">Habilitar Entidades Com Status Não Planejado Na Busca</h4>
+<p>Habilitar essa funcionalidade faz com que as entidades que não possuem datas (ou seja, com status de não planejado) possam ser pesquisadas nos campos de busca como a consulta rápida, por exemplo.</p>
+<h4 id="habilitar-status-nao-planejado-na-percentual-e-nas-datas">Habilitar Status Não Planejado Na Percentual E Nas Datas</h4>
+<p>Habilitar essa funcionalidade faz com que as entidades que não possuem datas (ou seja, com status de não planejado) sejam consideradas ao exibir o percentual de conclusão das entidades.</p>
+<h4 id="habilitar-exibicao-do-status-informado-na-pagina-do-painel">Habilitar Exibição Do Status Informado Na Página Do Painel</h4>
+<p>Torna visível na página da entidade o status informado, que é exibido na parte superior da tela.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../assets/bridge-brand.js?v=13"></script>
+      
+        <script src="../assets/chatbot-modal.js"></script>
+      
+    
+  </body>
+</html>
