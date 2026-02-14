@@ -1,20 +1,7 @@
-// Chatbot Drawer Script - Suporte IA (Target brand only)
+// Chatbot Drawer Script - Suporte IA
 (function() {
   const CHATBOT_URL = 'https://iahml1.plataformatarget.com.br/unified';
   const IFRAME_TIMEOUT = 5000; // ms
-
-  // Detecta se a brand atual é "target"
-  function isTargetBrand() {
-    try {
-      // Lê parâmetros armazenados pelo bridge-brand.js
-      const stored = JSON.parse(sessionStorage.getItem('__brand_params') || '{}');
-      const brandCode = stored.brandCode || 'target'; // default é target
-      return brandCode.toLowerCase() === 'target';
-    } catch (e) {
-      // Se falhar, assume target (default)
-      return true;
-    }
-  }
 
   // Injeta HTML do drawer
   function injectChatbotHTML() {
@@ -49,7 +36,7 @@
     const body = document.getElementById('chatbot-drawer-body');
     if (!body) return;
 
-    // Mostra loading
+    // Clear and show loading
     body.innerHTML = '';
     const loading = document.createElement('div');
     loading.className = 'chatbot-loading';
@@ -69,7 +56,8 @@
 
     iframe.onload = () => {
       clearTimeout(t);
-      if (timedOut) return;
+      if (timedOut) return; // fallback already shown
+      // replace loading with iframe
       body.innerHTML = '';
       body.appendChild(iframe);
       console.log('[chatbot] iframe loaded');
@@ -80,7 +68,7 @@
       showFallback();
     };
 
-    // Define src após listeners
+    // Set src last to start loading after handlers are attached
     setTimeout(() => {
       iframe.src = CHATBOT_URL;
     }, 50);
@@ -92,7 +80,6 @@
     if (!body) return;
     body.innerHTML = `
       <div class="chatbot-fallback">
-        <p>Se não aparecer aqui, seu navegador ou servidor pode bloquear o embed.</p>
         <a class="chatbot-fallback-link" href="${CHATBOT_URL}" target="_blank" rel="noopener noreferrer">Abrir em nova aba →</a>
       </div>
     `;
@@ -108,15 +95,16 @@
     overlay.setAttribute('aria-hidden', 'false');
     document.body.classList.add('chatbot-drawer-open');
 
+    // create iframe lazily
     createIframe();
 
-    // Foca no botão fechar
+    // move focus to close button
     setTimeout(() => {
       const close = document.getElementById('chatbot-drawer-close');
       if (close) close.focus();
     }, 120);
 
-    // Armazena botão para retornar foco depois
+    // store opener for returning focus later
     overlay._opener = btn;
   }
 
@@ -130,19 +118,19 @@
     overlay.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('chatbot-drawer-open');
 
-    // Remove iframe para liberar recursos
+    // remove iframe to free resources
     if (body) {
       body.innerHTML = '<div class="chatbot-loading"><div class="spinner"></div><div>Carregando chat...</div></div>';
     }
 
-    // Retorna foco para botão
+    // return focus to opener
     try {
       const opener = overlay._opener;
       if (opener && typeof opener.focus === 'function') opener.focus();
     } catch (e) {}
   }
 
-  // Listeners
+  // Event listeners setup
   function setupEventListeners() {
     const overlay = document.getElementById('chatbot-overlay');
     const btn = document.getElementById('chatbot-btn');
@@ -153,6 +141,7 @@
 
     if (overlay) {
       overlay.addEventListener('click', (e) => {
+        // close when clicking overlay (outside drawer)
         if (e.target === overlay) closeDrawer();
       });
     }
@@ -167,13 +156,8 @@
     });
   }
 
-  // Inicializa somente para brand "target"
+  // Initialize when DOM is ready
   function init() {
-    if (!isTargetBrand()) {
-      console.log('[chatbot] Brand não é Target, drawer desativado');
-      return;
-    }
-
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => {
         injectChatbotHTML();
@@ -185,6 +169,7 @@
     }
   }
 
+  // Start initialization
   init();
 
 })();
