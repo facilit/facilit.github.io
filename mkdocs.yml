@@ -11,8 +11,10 @@ theme:
     - navigation.top
 extra_css:
   - stylesheets/extra.css
+  - assets/chatbot-modal.css
 extra_javascript:
   - assets/bridge-brand.js?v=13
+  - assets/chatbot-modal.js
   
 extra:
   generator: false   # 🔹 remove a barra "Made with Material for MkDocs"
