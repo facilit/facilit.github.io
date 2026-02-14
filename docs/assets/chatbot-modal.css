@@ -31,12 +31,8 @@
   line-height: 1;
 }
 
-/* Quando drawer está aberto, botão sobe para encostamento */
-.chatbot-overlay.active ~ .chatbot-button,
-.chatbot-overlay.active + .chatbot-button,
-.chatbot-button.active {
-  bottom: calc(85vh + 0px);
-}
+/* O botão permanece na posição inferior quando o painel abre (sem gap).
+   Posicionamento controlado por `.chatbot-button` (bottom/right). */
 
 /* Overlay semicircular leve */
 .chatbot-overlay {
