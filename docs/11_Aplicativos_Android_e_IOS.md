@@ -19,8 +19,8 @@ Este artigo apresenta o passo a passo para instalar e acessar o aplicativo da Pl
 
 1. Acesse a loja de aplicativos do seu dispositivo:
 
-   * **Play Store** (para Android)
-   * **App Store** (para iOS)
+   * [**Play Store** (para Android)](https://play.google.com/store/apps/details?id=br.com.facilit.target&hl=pt_BR&pli=1)
+   * [**App Store** (para iOS)](https://apps.apple.com/br/app/plataforma-target/id1456305907)
 
 2. Na barra de busca, digite o nome do aplicativo da Plataforma.
 
