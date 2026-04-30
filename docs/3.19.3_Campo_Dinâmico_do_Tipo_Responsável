@@ -1,0 +1,170 @@
+Identificar quem é responsável por cada papel em uma entidade costuma exigir consultas manuais em planilhas, e-mails ou anotações paralelas. Quando a equipe de um projeto muda ou cresce, manter essa informação atualizada no sistema vira um desafio constante — e a visibilidade para gestores e demais servidores fica comprometida.
+
+A plataforma já conta com campos fixos de responsabilidade — **Responsável**, **Subresponsável** e **Monitor** — mas sem flexibilidade para criar outros tipos de responsáveis conforme a necessidade do órgão. O **Campo Dinâmico com Responsável** resolve exatamente isso: permite que você crie campos personalizados diretamente na entidade para registrar quem exerce cada papel — Analista de Requisitos, Fiscal de Contrato, Coordenador de Área, entre outros. Cada campo exibe foto e nome do responsável, com suporte a múltiplas pessoas por papel, tudo centralizado e sempre atualizado na plataforma.
+
+O resultado é uma visibilidade completa da equipe do projeto sem sair do sistema: quem faz o quê fica registrado de forma estruturada, exportável e integrável com o Gantt e o Gerenciador de Entidades.
+
+---
+
+# Campo Dinâmico com Responsável
+
+> ⚠️ **Nomenclatura por ambiente:** O nome dos módulos, botões e campos pode variar conforme a configuração do seu órgão. Caso não encontre alguma opção mencionada neste artigo, consulte o administrador da plataforma.
+
+---
+
+## Como acessar
+
+1. Acesse o módulo **Cadastro Auxiliar New** no menu principal
+2. Clique em **Campos Dinâmicos**
+3. Selecione **Novo Campo** para criar um campo do tipo Responsável
+
+[INSERIR PRINT AQUI — Tela de listagem de Campos Dinâmicos com o botão "Novo Campo" destacado]
+
+---
+
+## Passo 1 — Criar o Campo Dinâmico do tipo Responsável
+
+Ao criar um novo campo dinâmico, você precisará definir suas características básicas. Para que ele funcione como um seletor de responsável, siga as configurações abaixo.
+
+### Configurações obrigatórias
+
+| Campo | O que preencher |
+|---|---|
+| **Nome do campo** | Informe o papel que este campo representa, por exemplo: `Analista de Requisitos`, `Fiscal do Contrato`, `Coordenador de Área` |
+| **Elemento visual** | Selecione **Busca por Responsável** |
+| **Tipo de valor** | Será automaticamente travado como **Responsável** ao selecionar o elemento visual acima |
+
+> 💡 **Dica:** O nome do campo é o que aparece na entidade para todos os servidores. Escolha um nome que reflita claramente o papel exercido — prefira nomes usados no seu órgão, como "Gestor do Contrato" em vez de "Responsável 1".
+
+[INSERIR PRINT AQUI — Formulário de criação do campo dinâmico com "Elemento visual: Busca por Responsável" selecionado]
+
+### Posição do campo na entidade
+
+Ao criar o campo, você pode escolher onde ele será exibido na entidade. Para manter a organização e evitar confusão com os campos nativos, recomendamos selecionar a opção **Entidade: Abaixo do responsável** — dessa forma o campo ficará logo abaixo do bloco de Responsável, Analista e Monitor.
+
+[INSERIR PRINT AQUI — Formulário de criação com a opção de posição "Entidade: Abaixo do responsável" selecionada]
+
+[INSERIR PRINT AQUI — Entidade com o novo campo dinâmico exibido abaixo do bloco de responsáveis padrão]
+
+---
+
+## Passo 2 — Anexar o Campo a um Nível de Informação
+
+Após configurar o campo, é necessário vinculá-lo ao nível de informação em que ele estará disponível. Acesse a aba **Anexos** dentro do cadastro do campo e selecione em qual nível (N1, N2, N3, N4, N5 ou N6) o campo deve aparecer. Nesta mesma tela, você pode definir se o preenchimento do campo será **obrigatório** para aquele nível.
+
+[INSERIR PRINT AQUI — Aba Anexos do campo dinâmico com a seleção do nível de informação e a opção de obrigatoriedade]
+
+---
+
+## Passo 4 — Associar Responsáveis ao Campo
+
+Com o campo criado, os servidores já poderão preenchê-lo diretamente na entidade. A associação pode ser feita de duas formas:
+
+### Pela edição da entidade (Canetinha)
+
+1. Abra a entidade desejada
+2. Clique no ícone de **edição (canetinha)** ao lado do campo dinâmico
+3. Use a **busca por nome** para encontrar o responsável desejado
+4. Selecione a pessoa na lista — ela será adicionada ao campo
+
+[INSERIR PRINT AQUI — Campo dinâmico em modo de edição com a busca por responsável aberta]
+
+### Pela edição rápida no Gerenciador de Entidades
+
+1. Acesse o **Gerenciador de Entidades**
+2. Localize a entidade na lista
+3. Clique em **Edição Rápida**
+4. Preencha o campo dinâmico de responsável diretamente na linha da entidade
+
+[INSERIR PRINT AQUI — Gerenciador de Entidades com a opção de edição rápida aberta, mostrando o campo dinâmico]
+
+### Múltiplos responsáveis por campo
+
+É possível associar **até 10 responsáveis** em um mesmo campo. Quando houver mais de 10 pessoas, o campo exibirá uma rolagem automática para visualizar todos.
+
+> 💡 **Exemplo prático:** Em um contrato de obra pública com múltiplas fiscalizações, a Secretaria de Infraestrutura pode criar um campo "Equipe de Fiscalização" e associar todos os fiscais técnicos do contrato em um único lugar — sem precisar de planilhas externas ou anotações avulsas.
+
+[INSERIR PRINT AQUI — Campo dinâmico com múltiplos responsáveis listados, mostrando foto e nome de cada um]
+
+---
+
+## Passo 5 — Visualizar no Portlet de Campos Dinâmicos
+
+Após preencher os campos, as informações ficam disponíveis no **Portlet de Campos Dinâmicos** da entidade, que exibe:
+
+- **Foto** do responsável
+- **Nome completo** do responsável
+- **Agrupamento por campo**: cada campo dinâmico exibe seus responsáveis juntos, dentro do mesmo grupo
+
+[INSERIR PRINT AQUI — Portlet de Campos Dinâmicos exibindo foto e nome dos responsáveis agrupados por campo]
+
+> 💡 **Dica:** Se o seu órgão usa o portlet para reuniões de acompanhamento, esta visualização facilita identificar rapidamente quem acionar em cada assunto — sem precisar consultar outros sistemas ou documentos.
+
+---
+
+## Passo 6 — Exportar e Importar os Dados
+
+Os campos dinâmicos do tipo Responsável têm suporte completo às operações de exportação e importação pelo **Gerenciador de Entidades**.
+
+### Exportação
+
+1. Acesse o **Gerenciador de Entidades**
+2. Selecione o **nível da entidade** desejada
+3. Clique em **Exportar**
+4. Nas opções de exportação, selecione o campo dinâmico de responsável entre as informações a incluir no arquivo
+
+[INSERIR PRINT AQUI — Tela de exportação do Gerenciador de Entidades com os campos dinâmicos incluídos]
+
+### Importação via planilha
+
+Ao importar entidades com campos dinâmicos do tipo Responsável, utilize a seguinte convenção:
+
+| Configuração | Formato esperado |
+|---|---|
+| **Chave de identificação** | E-mail do responsável |
+| **Múltiplos responsáveis** | E-mails separados por **ponto e vírgula** (`;`) |
+
+**Exemplo de preenchimento na planilha:**
+```
+analista_requisitos
+joao.silva@orgao.gov.br;maria.santos@orgao.gov.br
+```
+
+[INSERIR PRINT AQUI — Planilha de importação com a coluna do campo dinâmico preenchida com e-mails separados por ponto e vírgula]
+
+---
+
+## Passo 7 — Integração com o Gantt Sincronizado
+
+O campo dinâmico com Responsável também é suportado na **importação do Gantt Sincronizado**. Use a mesma convenção de e-mails separados por ponto e vírgula (`;`) ao preparar o arquivo de importação.
+
+[INSERIR PRINT AQUI — Tela de importação do Gantt Sincronizado com o campo dinâmico de responsável configurado]
+
+---
+
+## Dicas para melhores resultados
+
+✅ **Nomeie os campos de forma clara:** Use nomes de papéis reconhecidos no seu órgão — como "Coordenador Técnico" ou "Fiscal Administrativo" — para que qualquer servidor entenda sem precisar de explicação.
+
+✅ **Crie um campo por papel:** Evite criar um campo genérico chamado "Equipe". Prefira campos específicos por função — isso facilita filtros, exportações e visualizações futuras.
+
+✅ **Mantenha os e-mails cadastrados:** Para que a busca e a importação funcionem corretamente, verifique se todos os responsáveis estão cadastrados na plataforma com o e-mail institucional atualizado.
+
+✅ **Use múltiplos campos isolados:** Se o projeto tem papéis diferentes, crie um campo dinâmico para cada papel. Cada campo mantém sua lista de responsáveis de forma independente, sem misturar informações.
+
+✅ **Copiar e mover entidades:** O campo dinâmico com Responsável é preservado ao copiar, mover ou migrar entidades — os responsáveis associados acompanham a entidade automaticamente.
+
+---
+
+## Conclusão
+
+O Campo Dinâmico com Responsável torna a gestão de equipes de projetos mais transparente e centralizada, eliminando o uso de controles paralelos para registrar quem é responsável por cada função. Com suporte à exibição visual por foto e nome, exportação, importação e integração com o Gantt, essa funcionalidade oferece uma visão completa da equipe diretamente na entidade — pronta para acompanhamento, auditoria e relatórios.
+
+---
+
+## Artigos Relacionados
+
+- [Campos Dinâmicos — Visão Geral]
+- [Gerenciador de Entidades — Exportação e Importação]
+- [Gantt Sincronizado]
+- [Portlet de Campos Dinâmicos]
