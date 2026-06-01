@@ -102,6 +102,7 @@ nav:
     - Campos Dinâmicos: 3.19_Campos_Dinâmicos.md
     - Publicador de Campos Dinâmico: 3.19.1_Publicador_de_Campos_Dinâmico.md
     - Campo Dinâmico tipo Instituição: 3.19.2_Campo_Dinâmico_tipo_instituição.md
+    - Campo Dinâmico do tipo Responsável: 3.19.3_Campo_Dinâmico_do_Tipo_Responsável.md
   - Reuniões, Apresentações e Encaminhamentos:
     - Reuniões, Apresentações e Encaminhamentos: 6_Reuniões,_Apresentações_e_Encaminhamentos.md
     - Apresentações: 6.1_Apresentações.md
@@ -113,6 +114,9 @@ nav:
     - Encaminhamentos: 6.3_Encaminhamentos.md
     - Gerenciador de Encaminhamentos: 6.3.2_Gerenciador_de_Encaminhamentos.md
     - Quadro Kanban de Encaminhamentos: 6.3.3_Quadro_Kanban_de_Encaminhamentos.md
+    - Criação Rápida de Encaminhamento de Mensagem: 6.3.4_Criação_Rápida_de_Encaminhamento_de_Mensagem__brand-target.md
+    - Atribuição de Encaminhamentos a Grupos de Usuários: 6.3.5_Atribuição_de_Encaminhamentos_a_Grupos_de_Usuários__brand-target.md
+    - Criação Rápida de Responsável: 6.3.6_Criação_Rápida_de_Responsável__brand-target.md
     - Enviar mensagem via WhatsApp ao responsável do Projeto: 6.4_Enviar_mensagem_para_Whatsapp_do_responsável.md
   - Relatórios e Dashboards:
     - Relatórios e Dashboards: 7_Relatórios_e_Dashboards.md
@@ -137,6 +141,8 @@ nav:
     - Configuração de Páginas: 10.1_Configuração_de_Páginas.md
     - Criação de Páginas: 10.1.4_Criação_de_Páginas.md
     - Configuração de N Abas nas Entidades: 10.1.5_Configuração_de_N_Abas_nas_Entidades.md
+    - Configuração do Portlet de Marco Crítico: 10.1.6_Configuração_do_Portlet_de_Marco_Crítico__brand-target.md
+    - Configuração do Portlet de Metas e Desdobramentos para Agency: 10.1.7_Configuração_do_Portlet_de_Metas_e_Desdobramentos_para_Agency__brand-target.md
     - Cadastros Auxiliares: 10.2_Cadastros_Auxiliares.md
     - Criação de Tags: 10.2.1_Criação_de_Tags.md
     - Importar Responsáveis: 10.2.2_Importar_Responsáveis.md
