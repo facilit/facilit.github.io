@@ -78,6 +78,19 @@
 
   const ALL_SUFFIXES = Object.values(BRANDS).map(b => b.fileSuffix);
 
+  // ===== REDIRECT FROM ROOT IF BRANDED =====
+  if ((location.pathname === "/" || location.pathname === "") && params.brandCode) {
+    const suffix = getBrandConfig(params.brandCode).fileSuffix;
+    if (suffix) {
+      const homePage = "1.Visão_Geral" + suffix;
+      const url = new URL(location.href);
+      url.pathname = "/" + homePage + "/";
+      url.hash = DESIRED_HASH;
+      LOG("redirecting root to brand home:", url.toString());
+      location.href = url.toString();
+    }
+  }
+
   const hrefHasBrandSuffix = (href="") => ALL_SUFFIXES.some(s => href.includes(s));
   const isBrandSplitPath   = (p="")    => hrefHasBrandSuffix(p);
 

@@ -25,11 +25,11 @@ markdown_extensions:
   - pymdownx.superfences
 nav:
   - "⭐ Novidades":
-    - "✨ Criar EAP com IA": 2.1.1_Criar_EAP_com_IA.md
-    - "✨ Gerar Ata com IA": 6.2.1_Gerar_Ata_com_IA.md
+    - "Criar EAP com IA ✨": 2.1.1_Criar_EAP_com_IA.md
+    - "Gerar Ata com IA ✨": 6.2.1_Gerar_Ata_com_IA.md
     - Gerador de Relatórios e Apresentações: 7.4_Gerador_de_Relatórios_e_Apresentações.md
     - Gerador de Dashboards: 7.5_Gerador_de_Dashboards.md
-  - "✨ Funcionalidades de IA":
+  - "✨ Inteligência Artificial":
     - Criar EAP com IA: 2.1.1_Criar_EAP_com_IA.md
     - Gerar Ata com IA: 6.2.1_Gerar_Ata_com_IA.md
   - Visão Geral:
